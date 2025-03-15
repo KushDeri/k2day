@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big,cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, head, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*vertical-align: baseline;*/
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+    background-color: transparent;
+}
+
+.blok {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+	font-weight: bold;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 80px;
+	text-align: left;
+	padding: 550px 0 425px;
+	height: 100%;
+}
+.blok svg {
+	height: 90%;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	float: right;	
+	overflow: hidden;
+}
+.blok h1 {
+	font-family: 'Aclonica', sans-serif;
+	font-size: 64px;
+	color: #7F4A45;
+	padding: 0 0 0 145px;
+	margin-top: -300px;
+	margin-bottom: -30px;
+}
+.blok h2 {
+	font-family: 'Aclonica', sans-serif;
+	font-size: 200px;
+	color: #130600;
+	padding: 0 0 0 135px;
+}
+
+.nazva {
+	font-family: 'Aclonica', sans-serif;
+	font-size: 36pt;
+	display: flex;
+    align-items: center;
+}
+.nazva_b {
+	/*padding-left: 70px;*/
+	font-family: 'Aclonica', sans-serif;
+	font-size: 36pt;
+	color: #000;
+	display: flex;
+    align-items: center;
+}
+.nazva a, .nazva svg {
+	padding-left: 10px;
+	-webkit-filter: drop-shadow(0 0 15px #fbcbb4);
+    filter: drop-shadow(0 0 15px #fbcbb4);
+}
+.nazva a:hover {
+  -webkit-filter: drop-shadow(0 0 10px #fdb493);
+  filter: drop-shadow(0 0 10px #fdb493);
+}
+.nazva_b a, .nazva_b svg {
+	padding-left: 10px;
+	-webkit-filter: drop-shadow(0 0 15px #fdb493);
+    filter: drop-shadow(0 0 15px #fdb493);
+}
+.nazva_b a:hover {
+  -webkit-filter: drop-shadow(0 0 10px #fbcbb4);
+  filter: drop-shadow(0 0 10px #fbcbb4);
+}
+.nazva a, .nazva_b a {
+	display: flex;
+    align-items: center;
+}
+.nazva2 {
+	padding: 20px 0 30px;
+	font-size: 24pt;
+}
+
+.bg {
+	background: linear-gradient(180deg, #C9908B 15.08%, #BD847F 28.02%, #8A544F 78.01%, #7F4A45 91.26%);
+	padding: 60px 70px 150px;
+}
+.bg_w {
+	background: #fff;
+	padding: 60px 70px 150px;
+}
+.bg p {
+	color: #fff;
+}
+.bg_w span, .bg_w p, .bg_w div, .bg_w a {
+	color: #000;
+}
+
+
+.floor {
+	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
+	box-shadow: 0px 5px 20px #C9908B;
+	padding: 60px 40px 30px 40px;
+	margin-top: -114px;
+	left: 0px;
+	z-index: 2;
+	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.floor a {
+	padding-right: 10px;
+}
+.floor_frond{
+	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
+	box-shadow: 0px 5px 20px #C9908B;
+	margin-top: -74px;
+	height: 114px;
+	left: 0px;
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+
+/*tablet 768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+	.bg_w, .bg {
+		padding: 40px 40px 150px 40px;
+	}
+	.blok {
+		padding: 250px 40px 330px;
+	}
+	.nazva, .nazva_b {
+		padding-left: 40px;
+	}
+}
+/*mobil L 425px*/
+@media screen and (min-width: 376px) and (max-width: 426px) {
+	.bg_w, .bg {
+		padding: 40px 40px 150px 40px;
+	}
+	.blok {
+		padding: 500px 0px 110px;
+	}
+	.blok h1 {
+		font-size: 20px;
+		margin-bottom: -5px;
+		padding: 150px 0 0 43px;
+	}
+	.blok h2 {
+		font-size: 60px;
+		padding: 0 0 0px 40px;
+	}
+	.nazva, .nazva_b {
+		font-size: 32pt;
+	}
+}
+
+/*mobil M 375px*/
+@media screen and (min-width: 321px) and (max-width: 376px) {
+	.bg_w, .bg {
+		padding: 40px 35px 150px 35px;
+		margin-top: 10px;
+		border-radius: 40px 40px 0px 0px;
+	}
+	.blok {
+		font-size: 68px;
+		padding: 455px 0 105px;
+	}
+	.blok h1 {
+		font-size: 18px;
+		margin-bottom: 0px;
+		padding: 0 0 0 51px;
+	}
+	.blok h2 {
+		font-size: 58px;
+		padding: 0 0 0 48px;
+	}
+	.nazva, .nazva_b {
+		font-size: 30pt;
+		margin-top: -90px;
+	}
+	.floor a {
+		padding-right: 5px;
+	}
+	.bg_w {
+	    padding: 60px 25px 150px;
+	}
+}
+
+/*mobil S 320px*/
+@media screen and (max-width: 321px) {
+	.bg_w, .bg {
+		padding: 40px 30px 110px 30px;
+		margin-top: 10px;
+		border-radius: 25px 25px 0px 0px;
+	}
+	.nazva, .nazva_b {
+		font-size: 28pt;
+		padding-left: 30px;
+		margin-top: -70px;
+	}
+	.blok {
+		font-size: 68px;
+		padding: 190px 35px 270px;
+	}
+	.blok h2 {
+		font-size: 50px;
+	}
+	.floor a {
+		padding-right: 5px;
+	}
+}

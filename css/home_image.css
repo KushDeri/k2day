@@ -1,0 +1,83 @@
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+
+/*солнце*/
+#SVGID_1_, .st0, .st1 {
+  animation: scrollAnimation 3s ease forwards;
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+/*горы*/
+#SVGID_2_, .st2, .st3,
+#SVGID_3_, .st4, .st5, 
+#SVGID_4_, #SVGID_5_, .st6 {
+  animation: scrollAnimation 4s ease forwards;
+  opacity: 0;
+  transform: translateX(700px);
+}
+
+/*ханок*/
+/*#SVGID_8_, .st9, #SVGID_9_, .st11, .st12, 
+#SVGID_102_, #SVGID_103_, #SVGID_104_, .st13, .st14, .st15, .st16, .st17, .st18, .st63, .st64, .st66, .st67, .st116, .st117 {
+  animation: scrollAnimation 3s ease forwards;
+  opacity: 0;
+  transform: translateY(500px);
+}*/
+
+/*дома*/
+#SVGID_105_, #SVGID_141_, .st118, .st155 {
+  animation: scrollAnimation 3s ease forwards;
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+/*башня*/
+#SVGID_106_, .st119, .st10 {
+  animation: scrollAnimation 4s ease forwards;
+  opacity: 0;
+  transform: translateY(700px);
+}
+
+/*lotte world*/
+#SVGID_107_, .st120 {
+  animation: scrollAnimation 4s ease forwards;
+  opacity: 0;
+  transform: translateY(700px);
+}
+
+/*облако*/
+/*#SVGID_108_, .st121 {
+  animation: scrollAnimation 3s ease forwards;
+  opacity: 0;
+  transform: translateX(500px);
+}*/
+
+/*облако*/
+/*#SVGID_109_, .st122 {
+  animation: scrollAnimation 3s ease forwards;
+  opacity: 0;
+  transform: translateX(500px);
+}*/
+
+/*сакура 40*/
+#SVGID_110_, #SVGID_111_, #SVGID_112_, #SVGID_113_, #SVGID_114_, #SVGID_115_, #SVGID_116_, #SVGID_117_,
+#SVGID_118_, #SVGID_119_, #SVGID_120_, #SVGID_121_, #SVGID_122_, #SVGID_123_, #SVGID_124_, #SVGID_125_,
+#SVGID_126_, #SVGID_127_, #SVGID_128_, #SVGID_129_, #SVGID_130_, #SVGID_131_, #SVGID_132_, #SVGID_133_,
+#SVGID_134_, #SVGID_135_, #SVGID_136_, #SVGID_137_, #SVGID_138_, #SVGID_139_, #SVGID_140_, 
+.st123, .st124, .st125, .st126, .st127, .st128, .st129, .st130, .st131, .st132, .st133, .st134,
+.st135, .st136, .st137, .st138, .st139, .st140, .st141, .st142, .st143, .st144, .st145, .st146,
+.st147, .st148, .st149, .st150, .st151, .st152, .st153, .st154 {
+  animation: scrollAnimation 4s ease forwards;
+  opacity: 0;
+  transform: translateX(700px);
+}

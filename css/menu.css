@@ -1,0 +1,206 @@
+.menu {
+	list-style: none;
+	width: 100%;
+	padding: 0 70px 0;
+	display: flex;	
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	box-sizing: border-box;
+	/*делает все элементы блочными*/
+	background: transparent;
+	overflow: hidden;
+    height: auto;
+    transition: all 0.3s ease-out 0s;
+}
+
+.menu .logo a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999em;
+    background: url(../images/home.svg) center no-repeat;
+    background-size: contain;
+}
+
+.logo {
+	position: absolute;
+    z-index: 10;
+    color: #111;
+    padding: 25px 30px 20px 0;
+}
+
+.menu .nav {
+	position: relative;
+    font-size: 0;
+}
+
+/*.menu .nav .nav_bg {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease-out 0s;
+}*/
+
+.menu .nav .main {
+	position: relative;
+    left: calc(4% + 1rem);
+    display: inline-block;
+    width: auto;
+    font-size: 0;
+    text-align: left;
+    transition: all 0.3s ease-out 0s;
+}
+
+.menu .nav .main > li {
+    display: inline-block;
+    /*margin: 2.3rem 3.5rem 0;*/
+    vertical-align: top;
+}
+
+.menu .nav .main > li > a {
+    display: block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    opacity: .6;
+    letter-spacing: -0.01rem;
+    line-height: 1.07;
+    padding: 25px 30px 30px 20px;
+
+}
+.menu .nav .main > li > a:hover {
+  filter: drop-shadow(1px 0 1px #311D15);
+}
+.menu .nav .main > li > a .on {
+    opacity: 1;
+}
+
+.ver_m {
+	display: block;
+}
+
+.menu .nav .main li a {
+    position: relative;
+}
+
+.menu .nav .main li a:after {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    color: #000;
+    content: '';
+    transition: all 0.3s ease-out 0s;
+}
+
+.menu .icon {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+.menu .icon svg {
+	width: 25px;
+	height: 25px;
+}
+
+
+.burger-icon {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.burger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+/*.menu.responsive .burger-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.responsive .burger-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.responsive .burger-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}*/
+
+
+
+
+/*telefon*/
+@media screen and (max-width: 850px) {
+	.menu {
+		font-size: 24px;
+		padding: 30px;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu a {
+		padding: 20px 30px;
+	}
+	.menu.responsive {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.menu .icon {
+		display: block;
+	}
+	.menu .icon .close {
+		display: none;
+	}
+	.menu .dropdown {
+		display: none;
+		flex-direction: column;
+	}
+	.menu .dropdown svg {
+		display: none;
+	}
+	.menu.responsive .dropdown {
+		display: flex;
+	}
+	/*.ver_b {
+		display: block;
+	}*/
+	.ver_m {
+	    display: none;
+	}
+	.logo {
+		position: relative;
+	}
+	.menu .nav .main {
+    left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 426px) {
+	.menu .logo a {
+	width: 15px;
+	height: 15px;
+	}
+}
