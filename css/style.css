@@ -12,50 +12,13 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 * {
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	color: #f8f3ed;
 }
 
 a {
 	text-decoration: none;
-    background-color: transparent;
+  background-color: transparent;
 }
-
-.blok {
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-	font-weight: bold;
-	font-family: 'Gochi Hand', cursive;
-	font-size: 80px;
-	text-align: left;
-	padding: 550px 0 425px;
-	height: 100%;
-}
-.blok svg {
-	height: 90%;
-	width: 100%;
-	z-index: -1;
-	position: absolute;
-	float: right;	
-	overflow: hidden;
-}
-.blok h1 {
-	font-family: 'Aclonica', sans-serif;
-	font-size: 64px;
-	color: #7F4A45;
-	padding: 0 0 0 145px;
-	margin-top: -300px;
-	margin-bottom: -30px;
-}
-.blok h2 {
-	font-family: 'Aclonica', sans-serif;
-	font-size: 200px;
-	color: #130600;
-	padding: 0 0 0 135px;
-}
-
 
 
 
@@ -90,90 +53,19 @@ a {
 
 /*tablet 768px*/
 @media screen and (min-width: 426px) and (max-width: 768px) {
-	.bg_w, .bg {
-		padding: 40px 40px 150px 40px;
-	}
-	.blok {
-		padding: 250px 40px 330px;
-	}
-	.nazva, .nazva_b {
-		padding-left: 40px;
-	}
+	
 }
 /*mobil L 425px*/
 @media screen and (min-width: 376px) and (max-width: 426px) {
-	.bg_w, .bg {
-		padding: 40px 40px 150px 40px;
-	}
-	.blok {
-		padding: 500px 0px 110px;
-	}
-	.blok h1 {
-		font-size: 20px;
-		margin-bottom: -5px;
-		padding: 150px 0 0 43px;
-	}
-	.blok h2 {
-		font-size: 60px;
-		padding: 0 0 0px 40px;
-	}
-	.nazva, .nazva_b {
-		font-size: 32pt;
-	}
+	
 }
 
 /*mobil M 375px*/
 @media screen and (min-width: 321px) and (max-width: 376px) {
-	.bg_w, .bg {
-		padding: 40px 35px 150px 35px;
-		margin-top: 10px;
-		border-radius: 40px 40px 0px 0px;
-	}
-	.blok {
-		font-size: 68px;
-		padding: 455px 0 105px;
-	}
-	.blok h1 {
-		font-size: 18px;
-		margin-bottom: 0px;
-		padding: 0 0 0 51px;
-	}
-	.blok h2 {
-		font-size: 58px;
-		padding: 0 0 0 48px;
-	}
-	.nazva, .nazva_b {
-		font-size: 30pt;
-		margin-top: -90px;
-	}
-	.floor a {
-		padding-right: 5px;
-	}
-	.bg_w {
-	    padding: 60px 25px 150px;
-	}
+	
 }
 
 /*mobil S 320px*/
 @media screen and (max-width: 321px) {
-	.bg_w, .bg {
-		padding: 40px 30px 110px 30px;
-		margin-top: 10px;
-		border-radius: 25px 25px 0px 0px;
-	}
-	.nazva, .nazva_b {
-		font-size: 28pt;
-		padding-left: 30px;
-		margin-top: -70px;
-	}
-	.blok {
-		font-size: 68px;
-		padding: 190px 35px 270px;
-	}
-	.blok h2 {
-		font-size: 50px;
-	}
-	.floor a {
-		padding-right: 5px;
-	}
+	
 }
