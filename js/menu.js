@@ -1,3 +1,32 @@
+window.addEventListener("scroll", function () {
+    let header = document.querySelector(".header");
+    let logo = document.querySelector(".logo a img");
+    let menuLinks = document.querySelectorAll(".menu_d a");
+
+    if (window.scrollY > 50) {
+        // Зменшуємо логотип
+        logo.style.width = "100px";
+        logo.style.transition = "0.3s";
+
+        // Збільшуємо шрифт у меню
+        menuLinks.forEach(link => {
+            link.style.fontSize = "18px";
+        });
+
+        // Зменшуємо висоту меню
+        //header.style.box-shadow = "0px 2px 10px rgba(0, 0, 0, 0.2)";
+    } else {
+        // Повертаємо стандартні розміри
+        logo.style.width = "130px";
+        menuLinks.forEach(link => {
+            link.style.fontSize = "16px";
+        });
+
+        //header.style.box-shadow = "0px";
+    }
+});
+
+
     //добавление класса on
 
     //for (var i = 0; i < 5; i++) {
@@ -63,9 +92,6 @@ menuOpener.addEventListener("click", (e) => {
     }
 });
 
-
-
-});
 
 
 

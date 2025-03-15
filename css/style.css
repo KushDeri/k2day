@@ -45,7 +45,7 @@ a {
 	background:none;
 	color: #f8f3ed;
 	font-size: 60px;
-	margin: 20px;
+	margin: 2px;
 }
 
 .floor_text {
@@ -53,8 +53,23 @@ a {
 	background: #a9b9a2;
 }
 
-.floor_text h4, .floor_text p {
-	background:none;
+.vintaz {
+	font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 45px;
+  color: #a56b4b;
+  /*align-items: center;
+  display: flex;*/
+}
+
+.floor_text h4{
+	font-size: 19px;
+}
+
+.floor_text p {
+	font-size: 16px;
 }
 
 

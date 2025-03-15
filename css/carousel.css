@@ -1,7 +1,8 @@
 .baner {
+    
     position: relative;
     width: 100%;
-    height: 500px; /* Можна налаштувати висоту */
+    height: 550px; /* Можна налаштувати висоту */
     overflow: hidden;
 }
 
