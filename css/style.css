@@ -56,61 +56,14 @@ a {
 	padding: 0 0 0 135px;
 }
 
-.nazva {
-	font-family: 'Aclonica', sans-serif;
-	font-size: 36pt;
-	display: flex;
-    align-items: center;
-}
-.nazva_b {
-	/*padding-left: 70px;*/
-	font-family: 'Aclonica', sans-serif;
-	font-size: 36pt;
-	color: #000;
-	display: flex;
-    align-items: center;
-}
-.nazva a, .nazva svg {
-	padding-left: 10px;
-	-webkit-filter: drop-shadow(0 0 15px #fbcbb4);
-    filter: drop-shadow(0 0 15px #fbcbb4);
-}
-.nazva a:hover {
-  -webkit-filter: drop-shadow(0 0 10px #fdb493);
-  filter: drop-shadow(0 0 10px #fdb493);
-}
-.nazva_b a, .nazva_b svg {
-	padding-left: 10px;
-	-webkit-filter: drop-shadow(0 0 15px #fdb493);
-    filter: drop-shadow(0 0 15px #fdb493);
-}
-.nazva_b a:hover {
-  -webkit-filter: drop-shadow(0 0 10px #fbcbb4);
-  filter: drop-shadow(0 0 10px #fbcbb4);
-}
-.nazva a, .nazva_b a {
-	display: flex;
-    align-items: center;
-}
-.nazva2 {
-	padding: 20px 0 30px;
-	font-size: 24pt;
-}
 
-.bg {
-	background: linear-gradient(180deg, #C9908B 15.08%, #BD847F 28.02%, #8A544F 78.01%, #7F4A45 91.26%);
-	padding: 60px 70px 150px;
-}
-.bg_w {
-	background: #fff;
-	padding: 60px 70px 150px;
-}
-.bg p {
-	color: #fff;
-}
-.bg_w span, .bg_w p, .bg_w div, .bg_w a {
-	color: #000;
-}
+
+
+
+
+
+
+
 
 
 .floor {
