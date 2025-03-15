@@ -18,7 +18,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	color: #3d3a36;
 }
 
-.comic-neue-bold {
+/*.comic-neue-bold {
   font-family: "Comic Neue", cursive;
   font-weight: 700;
   font-style: normal;
@@ -29,41 +29,46 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-}
+}*/
 
 a {
 	text-decoration: none;
   background-color: transparent;
 }
 
+.folower {
+	background: #a56b4b;
+	padding: 20px;
+}
 
+.folower h2 {
+	background:none;
+	color: #f8f3ed;
+	font-size: 60px;
+	margin: 20px;
+}
 
+.floor_text {
+	margin: 20px;
+	background: #a9b9a2;
+}
 
+.floor_text h4, .floor_text p {
+	background:none;
+}
 
-
-
-
-
-/*.floor {
-	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
-	box-shadow: 0px 5px 20px #C9908B;
+.floor {
+	background: #e2c6c0;
 	padding: 60px 40px 30px 40px;
-	margin-top: -114px;
+	margin-top: 0px;
 	left: 0px;
-	z-index: 2;
-	clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
 .floor a {
 	padding-right: 10px;
 }
-.floor_frond{
-	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
-	box-shadow: 0px 5px 20px #C9908B;
-	margin-top: -74px;
-	height: 114px;
-	left: 0px;
-	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-}*/
+
+
+
 
 
 /*tablet 768px*/
