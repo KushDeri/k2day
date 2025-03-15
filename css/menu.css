@@ -1,138 +1,45 @@
-.menu {
-	list-style: none;
-	width: 100%;
-	padding: 0 70px 0;
-	display: flex;	
-	position: fixed;
-	top: 0;
-	z-index: 99999;
-	box-sizing: border-box;
-	/*делает все элементы блочными*/
-	background: transparent;
-	overflow: hidden;
+/* Основний блок хедеру */
+.header {
+    text-align: center; /* Вирівнювання по центру */
+    border-bottom: 1.5px solid #3d3a36; /* Тонка лінія під хедером */
+    margin: 30px 0 20px; /* Простір навколо елементів */
+}
+
+/* Логотип */
+.logo img {
+    max-width: 130px; /* Можна налаштувати розмір логотипу */
     height: auto;
-    transition: all 0.3s ease-out 0s;
 }
 
-.menu .logo a {
-    display: block;
-    width: 24px;
-    height: 24px;
-    text-indent: -9999em;
-    background: url(../images/home.svg) center no-repeat;
-    background-size: contain;
-}
-
-.logo {
-	position: absolute;
-    z-index: 10;
-    color: #111;
-    padding: 25px 30px 20px 0;
-}
-
-.menu .nav {
-	position: relative;
-    font-size: 0;
-}
-
-/*.menu .nav .nav_bg {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: all 0.3s ease-out 0s;
-}*/
-
-.menu .nav .main {
-	position: relative;
-    left: calc(4% + 1rem);
-    display: inline-block;
-    width: auto;
-    font-size: 0;
-    text-align: left;
-    transition: all 0.3s ease-out 0s;
-}
-
-.menu .nav .main > li {
-    display: inline-block;
-    /*margin: 2.3rem 3.5rem 0;*/
-    vertical-align: top;
-}
-
-.menu .nav .main > li > a {
-    display: block;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    opacity: .6;
-    letter-spacing: -0.01rem;
-    line-height: 1.07;
-    padding: 25px 30px 30px 20px;
-
-}
-.menu .nav .main > li > a:hover {
-  filter: drop-shadow(1px 0 1px #311D15);
-}
-.menu .nav .main > li > a .on {
-    opacity: 1;
-}
-
-.ver_m {
-	display: block;
-}
-
-.menu .nav .main li a {
-    position: relative;
-}
-
-.menu .nav .main li a:after {
-    position: absolute;
-    bottom: 4px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    color: #000;
-    content: '';
-    transition: all 0.3s ease-out 0s;
-}
-
-.menu .icon {
-	display: none;
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	background: none;
-	border: none;
-	outline: none;
-	padding: 0;
-	margin: 0;
-}
-.menu .icon svg {
-	width: 25px;
-	height: 25px;
-}
-
-
-.burger-icon {
-    display: none;
-    background: none;
-    border: none;
-    outline: none;
+/* Меню */
+.menu ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 15px;
-    top: 20px;
-    cursor: pointer;
+    margin: 20px 0 0; /* Відступ зверху */
+    border-top: 1.5px solid #3d3a36; /* Тонка лінія зверху меню */
 }
 
-.burger-icon .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #000;
-    margin: 5px auto;
-    transition: all 0.3s;
+.menu ul div {
+	display: inline-block;
+}
+
+.menu_d {
+	border-right: 1.5px solid #3d3a36;
+}
+
+.menu ul div li {  
+    margin: 15px; /* Відступ між пунктами меню */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu ul li a:hover {
+    color: #007bff; /* Колір при наведенні */
 }
 
 

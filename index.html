@@ -14,61 +14,97 @@
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   
   <!--menu-->
-  <header>
-    <nav class="menu">
-      <h1 class="logo">
-        <a class="goMain" href="index.html">!home</a>
-      </h1>
+  <header class="header">
+    <div class="logo">
+      <a class="goMain" href="index.html">
+        <img src="images/k2day_4.png" alt="Logo">
+      </a>
+    </div>
+    <nav class="menu">  
       <ul class="main">
-        <li>
-          <a href="#">МАГАЗИН</a>
-        </li>
-        <li>
-          <a href="#">ЗЕ БЕСТ</a>
-        </li>
-        <li>
-          <a href="#">НОВИНКИ</a>
-        </li>
-        <li>
-          <a href="#">БРЕНДИ</a>
-        </li>
-        <li>
-          <a href="#">ЗНИЖКИ</a>
-        </li>
-        <li>
-          <a href="#">№1 У КОРЕЇ</a>
-        </li>
+        <div class="menu_d">
+          <li><a href="#">МАГАЗИН</a></li>
+        </div>
+        <div class="menu_d">
+          <li><a href="#">ЗЕ БЕСТ</a></li>
+        </div>
+        <div class="menu_d">
+          <li><a href="#">НОВИНКИ</a></li>
+        </div>
+        <div class="menu_d">
+          <li><a href="#">БРЕНДИ</a></li>
+        </div>
+        <div class="menu_d">
+          <li><a href="#">ЗНИЖКИ</a></li>
+        </div>
+        <div class="menu_d_end">
+          <li><a href="#">№1 У КОРЕЇ</a></li>
+        </div>
+        
       </ul>
     </nav>
   </header>
 
   <div class="baner">
     <div class="carousel">
-      <li class="slide">
-        <a href="#">
-          <div style="width: 100%; height: 100%;">
-            <picture style="width: 100%;">
-              <source src="images/carousel_1.png">
-            </picture>
-          </div>
-        </a>
-      </li>
+      <ul class="carousel-slides">
+        <li class="slide">
+          <a href="#">
+            <div style="width: 100%; height: 100%;">
+              <picture style="width: 100%;">
+                <img src="images/carousel.png">
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="slide">
+          <a href="#">
+            <div style="width: 100%; height: 100%;">
+              <picture style="width: 100%;">
+                <img src="images/carousel_1.png">
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="slide">
+          <a href="#">
+            <div style="width: 100%; height: 100%;">
+              <picture style="width: 100%;">
+                <img src="images/carousel.png">
+              </picture>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
     </div>
+  </div>
+
+  <div>
+    
   </div>
 
   <!--floor-->
   <div class="floor">
     
   </div>
+
+  <!--js-->
+  <script src="js/menu.js"></script>
+  <script src="js/carousel.js"></script>
 
 </body>
 
