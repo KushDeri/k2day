@@ -1,4 +1,34 @@
 .brand {
-	padding: 10px;
+	display: inline-block;
+	padding: 60px 0;
+	/*max-width: 100px;*/
 	background: #a56b4b;
+	overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+.brand img {
+	background: #a56b4b;
+	height: 35px; /* Всі логотипи будуть однакової висоти */
+    width: auto; /* Зберігаємо пропорції */
+    object-fit: contain;
+    padding-right: 40px;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    /*gap: 40px;*/
+    animation: marquee 15s linear infinite;
+}
+
+/* Анімація руху */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
