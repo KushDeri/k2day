@@ -1,6 +1,6 @@
 /* Основний стиль підвалу */
 .footer {
-    background-color: #e2c6c0;
+    background: #e2c6c0;
     padding: 30px 20px;
     text-align: center;
     /*border-top: 1px solid #ddd;*/
@@ -16,15 +16,21 @@
 }
 
 /* Логотип */
+.footer-logo {
+    background: #e2c6c0;
+}
 .footer-logo img {
     max-width: 60px;
+    background: #e2c6c0;
 }
 
 /* Меню */
+.footer-menu {
+    background: #e2c6c0;
+}
 .footer-menu ul {
-    background: none;
-    list-style: none;
     padding: 0;
+    background: #e2c6c0;
 }
 
 .footer-menu ul li {
@@ -33,24 +39,27 @@
 }
 
 .footer-menu ul li a {
-    text-decoration: none;
     color: #333;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    background: #e2c6c0;
 }
 
 .footer-menu ul li a:hover {
-    color: #007bff;
+    color: #FE656E;
 }
 
 /* Контакти */
+.footer-contacts {
+    background: #e2c6c0;
+}
 .footer-contacts p {
     margin: 5px 0;
     font-size: 14px;
+    background: #e2c6c0;
 }
 
 .footer-contacts a {
-    color: #007bff;
-    text-decoration: none;
+    color: #FE656E;
 }
 
 /* Соцмережі */
@@ -58,41 +67,22 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    background: #e2c6c0;
 }
 
 .footer-socials img {
     width: 24px;
     transition: opacity 0.3s;
+    background: #e2c6c0;
 }
 
 .footer-socials img:hover {
     opacity: 0.7;
 }
 
+
 /* Авторські права */
 .footer-bottom {
     margin-top: 20px;
     font-size: 12px;
-}
-
-
-
-
-/*tablet 768px*/
-@media screen and (min-width: 426px) and (max-width: 768px) {
-	
-}
-/*mobil L 425px*/
-@media screen and (min-width: 376px) and (max-width: 426px) {
-	
-}
-
-/*mobil M 375px*/
-@media screen and (min-width: 321px) and (max-width: 376px) {
-	
-}
-
-/*mobil S 320px*/
-@media screen and (max-width: 321px) {
-	
 }
