@@ -239,18 +239,29 @@
             border-bottom: 1px solid #ddd;
         }*/
 
+		
         .dropdown-menu {
         	position: static;
         	border-top: none;
         }
+        .menu-katalog:hover .tabs {
+        	display: block;
+        }
         .menu-katalog:hover .dropdown-menu {
 		    display: flex;
 		    flex-direction: column;
+		    flex: 1;
+		}
+		.dropdown-menu:hover .tabl-content {
+		    /*display: flex;
+		    justify-content: center;*/
+		    flex: 1;
 		}
 
         .tabl-content {
         	position: static;
         	margin: 0;
         	padding: 0;
+        	box-shadow: none;
         }
 }
