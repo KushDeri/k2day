@@ -1,0 +1,40 @@
+.katalog {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter {
+    flex: 1;
+}
+
+.all-card {
+    display: flex;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 4;
+    gap: 20px;
+}
+
+.card {
+    
+}
+.card img {
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.card-info {
+
+}
+
+.card-big {
+
+}
+.card-big img {
+    width: 520px;
+    height: 720px;
+    border-radius: 25px;
+}
