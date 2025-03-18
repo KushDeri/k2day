@@ -34,13 +34,13 @@
   'GRAD' 0,
   'opsz' 24
 }
-/*.burger-menu span {
-    width: 30px;
+.burger-menu span {
+    /*width: 30px;
     height: 3px;
-    background: #3d3a36;
+    background: #3d3a36;*/
     margin: 5px 0;
     transition: all 0.3s;
-}*/
+}
 
 /* Меню */
 .menu ul {
@@ -184,28 +184,58 @@
 
 
 @media (max-width: 768px) {
-    	.burger-menu {
+		.header{
+			display: flex;
+			align-items: center;
+			padding: 20px 20px 10px 20px;
+			width: 95%;
+		}
+		.menu_back{
+			padding-top: 100px;
+		}
+
+		.logo img {
+			width: 100px;
+			height: auto;
+		}
+
+		.burger-menu {
+			display: flex;
+			align-items: flex-end;
+		}
+    	.burger-menu .open {
             display: flex;
+        }
+        .burger-menu .close {
+        	display: none;
         }
         .menu {
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 60px;
+            top: 64px;
             left: 0;
-            width: 100%;
-            border-top: 1.5px solid #3d3a36;
+            height: 100vh;
+            width: 100vh;
+            /*border-top: 1.5px solid #3d3a36;*/
         }
         .menu.active {
             display: flex;
+            flex-direction: column;
+        }
+
+        .menu_d, .menu_d_end {
+        	display: flex;
+        	justify-content: center;
         }
         .menu ul {
-            flex-direction: column;
-            width: 100%;
+        	margin: 0;
+            /*flex-direction: column;
+            width: 100%;*/
         }
-        .menu ul li {
+        /*.menu ul li {
             text-align: center;
             padding: 15px;
             border-bottom: 1px solid #ddd;
-        }
+        }*/
 }
