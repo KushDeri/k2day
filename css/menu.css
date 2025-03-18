@@ -216,7 +216,7 @@
             top: 64px;
             left: 0;
             height: 100vh;
-            width: 100vh;
+            width: 100%;
             /*border-top: 1.5px solid #3d3a36;*/
         }
         .menu.active {
@@ -238,4 +238,18 @@
             padding: 15px;
             border-bottom: 1px solid #ddd;
         }*/
+
+        .dropdown-menu {
+        	position: static;
+        	border-top: none;
+        }
+        .menu-katalog:hover .dropdown-menu {
+		    display: inline;
+		}
+
+        .tabl-content {
+        	position: static;
+        	margin: 0;
+        	padding: 0;
+        }
 }
