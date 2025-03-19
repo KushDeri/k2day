@@ -1,6 +1,7 @@
 .blok_2 {
+	display: inherit;
 	text-align: center;
-	margin: 3.5em 0 5em 0;
+	margin: 3.5em 0 10em 0;
 }
 
 .blok_2 h2 {
