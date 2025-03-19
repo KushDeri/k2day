@@ -6,6 +6,7 @@
         .catch(error => console.error("Ошибка загрузки меню:", error));
 
 
+
 window.addEventListener("scroll", function () {
     let header = document.querySelector(".header");
     let logo = document.querySelector(".logo a img");
@@ -39,6 +40,7 @@ window.addEventListener("scroll", function () {
 
 // Открывашка меню
 //let menuOpener = document.querySelector(".icon");
+
 document.addEventListener("DOMContentLoaded", function () {
     let menu = document.getElementById("menu");
     let open = document.querySelector(".burger-menu .open");

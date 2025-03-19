@@ -1,16 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Тонер для лица",
+    "image": "images/katalog/round_lab/toner_500ml.jpg",
+    "brand": "round lab",
+    "name": "1025 DOKDO Тонер для лиця",
     "price": 1200,
-    "image": "images/products/toner.jpg",
-    "category": "face"
+    "v": 500,
+    "v_2": "ml",
+    "submenu": "face",
+    "category": "toner"
   },
+
+
+
+
+
+
+
+
   {
-    "id": 2,
+    "id": 999999,
+    "image": "images/products/cushion.jpg",
     "name": "Кушон для макияжа",
     "price": 2500,
-    "image": "images/products/cushion.jpg",
-    "category": "makeup"
+    "submenu": "makeup",
+    "category": "cushion"
   }
 ]
