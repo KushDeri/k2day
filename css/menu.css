@@ -182,13 +182,19 @@
 
 
 .menu_back {
-	padding-top: 160px;
+	padding-top: 9.7em;
 }
 
 
 
 
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+}
 
+
+/* Стили для телефонов */
 @media (max-width: 600px) {
 		.header{
 			display: flex;
@@ -197,7 +203,7 @@
 			width: 94.5%;
 		}
 		.menu_back{
-			padding-top: 100px;
+			padding-top: 4.7em;
 		}
 
 		.logo img {

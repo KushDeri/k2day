@@ -21,10 +21,14 @@ function showSlide(index) {
 
 nextButton.addEventListener('click', () => {
     showSlide(currentSlide + 1);
+    //currentSlide = (currentSlide + 1) % slides;
+    //updateSlider();
 });
 
 prevButton.addEventListener('click', () => {
     showSlide(currentSlide - 1);
+    //currentSlide = (currentSlide - 1 + slides) % slides;
+    //updateSlider();
 });
 
 // Автоперемикання кожні 5 секунд

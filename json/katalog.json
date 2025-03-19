@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Тонер для лица",
+    "price": 1200,
+    "image": "images/products/toner.jpg",
+    "category": "face"
+  },
+  {
+    "id": 2,
+    "name": "Кушон для макияжа",
+    "price": 2500,
+    "image": "images/products/cushion.jpg",
+    "category": "makeup"
+  }
+]

@@ -1,5 +1,4 @@
 .baner {
-    
     position: relative;
     width: 100%;
     height: 550px; /* Можна налаштувати висоту */
@@ -41,4 +40,22 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+
+
+
+
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .baner {
+        height: 400px;
+    }
+    
+}
+
+
+/* Стили для телефонов */
+@media (max-width: 600px) {
+
 }
