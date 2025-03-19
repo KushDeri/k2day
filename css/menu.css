@@ -189,7 +189,7 @@
 
 
 
-@media (max-width: 770px) {
+@media (max-width: 600px) {
 		.header{
 			display: flex;
 			align-items: center;
@@ -271,11 +271,6 @@
         	background: none;
         }
         
-		.menu-katalog.dropdown-menu:hover .tabl-content {
-		    /*display: flex;*/
-		    justify-content: center;
-		    /*flex: 1;*/
-		}
 
 
 		.submenu {

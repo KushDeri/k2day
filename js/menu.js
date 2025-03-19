@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let close = document.querySelector(".burger-menu .close");
     let face = document.getElementById("face");
     let tabl = document.querySelectorAll(".tabl-content");
+    //let tabs = document.querySelectorAll(".tabs");
 
     function toggleMenu(target) {
         if (target === 'menu') {
@@ -52,18 +53,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (target === 'face') {
+            alert("Кнопка нажата!");
             //face.classList.toggle("active");
-            tabl.style.display = "flex";
+            //tabl.style.display = "flex";
+            //tabs.style.display = "flex";
         }
     }
 
     document.getElementById("burger-menu").addEventListener("click", function () {
         toggleMenu('menu');
     });
-    //document.getElementById("face").addEventListener("click", function (event) {
+    document.getElementById("face").addEventListener("click", function (event) {
         //event.stopPropagation();
-    //    toggleMenu('face');
-    //});
+        toggleMenu('face');
+    });
 });
 
 
