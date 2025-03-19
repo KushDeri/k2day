@@ -1,4 +1,4 @@
-    fetch("../menu.html") // Загружаем файл меню
+    fetch("https://kushderi.github.io/k2day/menu.html") // Загружаем файл меню
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("menu-placeholder").innerHTML = data;
