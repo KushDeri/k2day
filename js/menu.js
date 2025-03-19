@@ -34,11 +34,38 @@ window.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
     let burgerMenu = document.getElementById("burger-menu");
     let menu = document.getElementById("menu");
+    let open = document.querySelector(".burger-menu .open");
+    let close = document.querySelector(".burger-menu .close");
+    let face = document.getElementById("face");
+    let tabl = document.querySelector(".tabl-content");
 
-    burgerMenu.addEventListener("click", function () {
-        menu.classList.toggle("active");
+    function toggleMenu(target) {
+        if (target === 'menu') {
+            menu.classList.toggle("active");
+
+            if (menu.classList.contains("active")) {
+                close.style.display = "flex";
+                open.style.display = "none";
+            } else {
+                close.style.display = "none";
+                open.style.display = "flex";
+            }
+        }
+
+        if (target === 'face') {
+            //face.classList.toggle("active");
+            tabl.style.display = "flex";
+        }
+    }
+
+    document.getElementById("burger-menu").addEventListener("click", function () {
+        toggleMenu('menu');
+    });
+    document.getElementById("face").addEventListener("click", function () {
+        toggleMenu('face');
     });
 });
+
 
 document.querySelectorAll(".submenu").forEach((category) => {
     category.addEventListener("mouseenter", function () {

@@ -126,7 +126,7 @@
 }
 
 .sub-dropdown {
-	display: block;
+	/*display: block;*/
     top: 0;
     left: 100%;
     display: flex;
@@ -208,9 +208,11 @@
 		}
     	.burger-menu .open {
             display: flex;
+            transition: font-size 0.3s;
         }
         .burger-menu .close {
         	display: none;
+        	transition: font-size 0.3s;
         }
         .menu {
             display: none;
@@ -249,23 +251,25 @@
         	position: static;
         	border-top: none;
         }
+
+		.menu-katalog:hover .tabl-content {
+		    display: none;
+		}
         .menu-katalog:hover .dropdown-menu {
         	display: flex;
         	flex-direction: column;
 		    flex: 1;
         }
-        .menu-katalog:hover .tabs .tabl-content {
-        	/*display: none;*/
-        }
         
-		.face:hover .tabl-content {
-		    display: flex;
-		    /*justify-content: center;*/
-		    flex: 1;
+		.menu-katalog.dropdown-menu:hover .tabl-content {
+		    /*display: flex;*/
+		    justify-content: center;
+		    /*flex: 1;*/
 		}
 
+
+
         .tabl-content {
-        	/*display: none;*/
         	position: static;
         	margin: 0;
         	padding: 0;
