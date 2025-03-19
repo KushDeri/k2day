@@ -32,12 +32,11 @@ window.addEventListener("scroll", function () {
 // Открывашка меню
 //let menuOpener = document.querySelector(".icon");
 document.addEventListener("DOMContentLoaded", function () {
-    let burgerMenu = document.getElementById("burger-menu");
     let menu = document.getElementById("menu");
     let open = document.querySelector(".burger-menu .open");
     let close = document.querySelector(".burger-menu .close");
     let face = document.getElementById("face");
-    let tabl = document.querySelector(".tabl-content");
+    let tabl = document.querySelectorAll(".tabl-content");
 
     function toggleMenu(target) {
         if (target === 'menu') {
@@ -61,10 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("burger-menu").addEventListener("click", function () {
         toggleMenu('menu');
     });
-    document.getElementById("face").addEventListener("click", function () {
-        toggleMenu('face');
-    });
+    //document.getElementById("face").addEventListener("click", function (event) {
+        //event.stopPropagation();
+    //    toggleMenu('face');
+    //});
 });
+
+
 
 
 document.querySelectorAll(".submenu").forEach((category) => {
