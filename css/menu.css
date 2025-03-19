@@ -61,7 +61,9 @@
 .lin {  
     margin: 15px; /* Відступ між пунктами меню */
 }
-
+.menu .main {
+	border-top: 1.5px solid #3d3a36;
+}
 .menu ul li a {
     text-decoration: none;
     color: #3d3a36;
@@ -124,6 +126,7 @@
 }
 
 .sub-dropdown {
+	display: block;
     top: 0;
     left: 100%;
     display: flex;
@@ -183,7 +186,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 		.header{
 			display: flex;
 			align-items: center;
@@ -217,7 +220,9 @@
             left: 0;
             height: 100vh;
             width: 100%;
-            /*border-top: 1.5px solid #3d3a36;*/
+        }
+        .menu .main {
+        	border-top: none;
         }
         .menu.active {
             display: flex;
@@ -244,21 +249,23 @@
         	position: static;
         	border-top: none;
         }
-        .menu-katalog:hover .tabs {
-        	display: block;
-        }
         .menu-katalog:hover .dropdown-menu {
-		    display: flex;
-		    flex-direction: column;
+        	display: flex;
+        	flex-direction: column;
 		    flex: 1;
-		}
-		.dropdown-menu:hover .tabl-content {
-		    /*display: flex;
-		    justify-content: center;*/
+        }
+        .menu-katalog:hover .tabs .tabl-content {
+        	/*display: none;*/
+        }
+        
+		.face:hover .tabl-content {
+		    display: flex;
+		    /*justify-content: center;*/
 		    flex: 1;
 		}
 
         .tabl-content {
+        	/*display: none;*/
         	position: static;
         	margin: 0;
         	padding: 0;
