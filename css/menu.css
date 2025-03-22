@@ -81,7 +81,7 @@
     display: none;
 }
 .menu-katalog:hover .tabl-content { /*все id табл-конт*/
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 
