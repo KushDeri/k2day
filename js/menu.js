@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 if (target === 'face') {
-                    alert("Кнопка нажата!");
+                    //alert("Кнопка нажата!");
+                    tabl.style.display = "flex"
                 }
             }
 
