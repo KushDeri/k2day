@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("menu-placeholder").innerHTML = data;
-            //setupMenu();
+            setupMenu(); // Функция для корректной работы выпадающего меню
+
             // Открывашка меню
             let menu = document.getElementById("menu");
             let open = document.querySelector(".burger-menu .open");
@@ -96,5 +97,60 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Ошибка загрузки меню:", error));
 });
 
+// Функция для корректной работы выпадающего меню
+function setupMenu() {
+    let menuKatalog = document.querySelector(".menu-katalog");
+    let dropdownMenu = document.querySelector(".dropdown-menu");
+    let dropdownTabl = document.querySelector(".tabl-contents");
+
+    if (!menuKatalog || !dropdownMenu || !dropdownTabl) return;
+
+    let timeout;
+
+    menuKatalog.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
+        dropdownMenu.style.display = "block";
+    });
+    dropdownMenu.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
+        dropdownTabl.style.display = "flex";
+    });
+    menuKatalog.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
+        dropdownTabl.style.display = "flex";
+    });
 
 
+    menuKatalog.addEventListener("mouseleave", function () {
+        timeout = setTimeout(function () {
+            dropdownMenu.style.display = "none";
+        }, 300);
+    });
+    menuKatalog.addEventListener("mouseleave", function () {
+        timeout = setTimeout(function () {
+            dropdownTabl.style.display = "none";
+        }, 300);
+    });
+
+
+    dropdownMenu.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
+    });
+
+    dropdownMenu.addEventListener("mouseleave", function () {
+        timeout = setTimeout(function () {
+            dropdownMenu.style.display = "none";
+        }, 300);
+    });
+
+
+    dropdownTabl.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
+    });
+
+    dropdownTabl.addEventListener("mouseleave", function () {
+        timeout = setTimeout(function () {
+            dropdownTabl.style.display = "none";
+        }, 300);
+    });
+}

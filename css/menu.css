@@ -68,18 +68,19 @@
 .menu ul li a:hover {
     color: #FE656E; /* Колір при наведенні */
 }
-
-
 .menu-katalog:hover {
     color: #FE656E; /* Колір при наведенні */
 }
+
+
+/*комп выпад-меню*/
 .menu-katalog:hover .dropdown-menu {
     display: block;
 }
 .menu-katalog:hover .dropdown-menu img{
     display: none;
 }
-.menu-katalog:hover .tabl-content {
+.menu-katalog:hover .tabl-content { /*все id табл-конт*/
     display: flex;
     justify-content: center;
 }
