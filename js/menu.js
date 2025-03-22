@@ -124,12 +124,12 @@ function setupMenu() {
     menuKatalog.addEventListener("mouseleave", function () {
         timeout = setTimeout(function () {
             dropdownMenu.style.display = "none";
-        }, 300);
+        }, 3000);
     });
     menuKatalog.addEventListener("mouseleave", function () {
         timeout = setTimeout(function () {
             dropdownTabl.style.display = "none";
-        }, 300);
+        }, 3000);
     });
 
 
