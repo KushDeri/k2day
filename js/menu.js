@@ -169,10 +169,19 @@ function setupMenu() {
     });
 
     // При уходе мыши скрываем все подменю
-    document.querySelector(".tabs").addEventListener("mouseleave", function () {
-        document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
-            submenu.style.display = "none";
+    //document.querySelector(".tabs").addEventListener("mouseleave", function () {
+    //    document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
+    //        submenu.style.display = "none";
+    //    });
+    //});
+    document.querySelectorAll(".submenu").forEach((category) => {
+        category.addEventListener("mouseleave", function () {
+            setTimeout(() => {
+                const subMenu = document.getElementById(this.getAttribute("data-category") + "-submenu");
+                if (subMenu) subMenu.style.display = "none";
+            }, 500); // небольшая задержка, чтобы можно было переместиться в подменю
         });
     });
+
 
 }
