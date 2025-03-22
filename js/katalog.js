@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data.json") // Загружаем JSON
+    fetch("https://kushderi.github.io/k2day/data.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => displayProducts(data)) // Передаём в функцию
         .catch(error => console.error("Ошибка загрузки JSON:", error));
