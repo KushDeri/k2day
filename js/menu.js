@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {   
-     
+    
     fetch("https://kushderi.github.io/k2day/menu.html") // Загружаем файл меню
         .then(response => response.text()) 
         .then(data => {
