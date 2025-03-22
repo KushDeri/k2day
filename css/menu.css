@@ -27,13 +27,6 @@
     cursor: pointer;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
 .burger-menu span {
     /*width: 30px;
     height: 3px;
@@ -129,7 +122,6 @@
 }
 
 .sub-dropdown {
-	/*display: block;*/
     top: 0;
     left: 100%;
     display: flex;
