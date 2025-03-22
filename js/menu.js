@@ -153,4 +153,33 @@ function setupMenu() {
             dropdownTabl.style.display = "none";
         }, 300);
     });
+
+
+
+    //Соответствиде выпвдающего меню и таблицы
+    document.querySelectorAll(".submenu").forEach((category) => {
+        category.addEventListener("mouseenter", function () {
+            // Скрываем все подменю
+            document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
+                submenu.style.display = "none";
+            });
+
+            // Определяем ID нужного подменю через data-category
+            const categoryName = this.getAttribute("data-category");
+            const subMenu = document.getElementById(categoryName + "-submenu");
+
+            // Показываем нужное подменю
+            if (subMenu) {
+                subMenu.style.display = "flex";
+            }
+        });
+    });
+
+    // При уходе мыши скрываем все подменю
+    document.querySelector(".tabs").addEventListener("mouseleave", function () {
+        document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
+            submenu.style.display = "none";
+        });
+    });
+
 }
