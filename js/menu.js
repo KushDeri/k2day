@@ -7,13 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
             setupMenu(); // Функция для корректной работы выпадающего меню
 
 
-            // Открывашка меню
+            let logo = document.querySelector(".logo a img");
             let menu = document.getElementById("menu");
+            let menuLinks = document.querySelectorAll(".menu ul");
             let open = document.querySelector(".burger-menu .open");
             let close = document.querySelector(".burger-menu .close");
-            let face = document.getElementById("face");
+            //let face = document.getElementById("face");
             let tabl = document.querySelectorAll(".tabl-content");
             //let tabs = document.querySelectorAll(".tabs");
+            let header = document.querySelector(".header");
+            let dropdown = document.querySelectorAll(".dropdown-menu");
+
+
+
+            // Открывашка меню
             function toggleMenu(target) {
                 if (target === 'menu') {
                     menu.classList.toggle("active");
@@ -41,12 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggleMenu('face');
             });
 
-            window.addEventListener("scroll", function () {
-                let header = document.querySelector(".header");
-                let logo = document.querySelector(".logo a img");
-                let menuLinks = document.querySelectorAll(".menu ul");
-                let dropdown = document.querySelectorAll(".dropdown-menu");
 
+            //Уменьшение лого
+            window.addEventListener("scroll", function () {
                 if (window.scrollY > 50) {
                     // Зменшуємо логотип
                     logo.style.width = "100px";
@@ -72,12 +76,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
+
+            //???
             document.querySelectorAll(".submenu").forEach((category) => {
                 category.addEventListener("mouseenter", function () {
                     document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
                         submenu.style.display = "none";
                     });
-
                     const subMenu = this.querySelector(".sub-dropdown");
                     if (subMenu) {
                         subMenu.style.display = "block";
@@ -94,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         })
-        .catch(error => console.error("Ошибка загрузки меню:", error));
+        //.catch(error => console.error("Ошибка загрузки меню:", error));
 });
 
 
