@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {    
+document.addEventListener("DOMContentLoaded", function () {   
+     setupMenu(); // Функция для корректной работы выпадающего меню
     fetch("https://kushderi.github.io/k2day/menu.html") // Загружаем файл меню
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("menu-placeholder").innerHTML = data;
-            setupMenu(); // Функция для корректной работы выпадающего меню
+            
 
             // Открывашка меню
             let menu = document.getElementById("menu");
@@ -27,9 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (target === 'face') {
                     alert("Кнопка нажата!");
-                    //face.classList.toggle("active");
-                    //tabl.style.display = "flex";
-                    //tabs.style.display = "flex";
                 }
             }
 
@@ -97,6 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Ошибка загрузки меню:", error));
 });
 
+
+
 // Функция для корректной работы выпадающего меню
 function setupMenu() {
     let menuKatalog = document.querySelector(".menu-katalog");
@@ -110,12 +110,9 @@ function setupMenu() {
     menuKatalog.addEventListener("mouseenter", function () {
         clearTimeout(timeout);
         dropdownMenu.style.display = "block";
-    });
-    dropdownMenu.addEventListener("mouseenter", function () {
-        clearTimeout(timeout);
         dropdownTabl.style.display = "flex";
     });
-    menuKatalog.addEventListener("mouseenter", function () {
+    dropdownMenu.addEventListener("mouseenter", function () {
         clearTimeout(timeout);
         dropdownTabl.style.display = "flex";
     });
@@ -124,10 +121,6 @@ function setupMenu() {
     menuKatalog.addEventListener("mouseleave", function () {
         timeout = setTimeout(function () {
             dropdownMenu.style.display = "none";
-        }, 3000);
-    });
-    menuKatalog.addEventListener("mouseleave", function () {
-        timeout = setTimeout(function () {
             dropdownTabl.style.display = "none";
         }, 3000);
     });
