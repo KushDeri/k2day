@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {   
-     setupMenu(); // Функция для корректной работы выпадающего меню
+     
     fetch("https://kushderi.github.io/k2day/menu.html") // Загружаем файл меню
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("menu-placeholder").innerHTML = data;
-            
+            setupMenu(); // Функция для корректной работы выпадающего меню
 
             // Открывашка меню
             let menu = document.getElementById("menu");
