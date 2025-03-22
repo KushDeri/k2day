@@ -8,7 +8,8 @@
     "v": 500,
     "v_2": "ml",
     "submenu": "face",
-    "category": "toner"
+    "category": "toner",
+    "details": "details/1.json"
   },
 
 
@@ -24,6 +25,7 @@
     "name": "Кушон для макияжа",
     "price": 2500,
     "submenu": "makeup",
-    "category": "cushion"
+    "category": "cushion",
+    "details": "details/2.json"
   }
 ]

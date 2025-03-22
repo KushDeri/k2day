@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("menu-placeholder").innerHTML = data;
             setupMenu(); // Функция для корректной работы выпадающего меню
 
+
             // Открывашка меню
             let menu = document.getElementById("menu");
             let open = document.querySelector(".burger-menu .open");
