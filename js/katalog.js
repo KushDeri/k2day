@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
 
-            function displayProducts(products) {
+            function displayProducts(data) {
                 const container = document.getElementById("products-container");
 
                 products.forEach(product => {
