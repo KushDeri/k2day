@@ -18,19 +18,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	color: #3d3a36;
 }
 
-/*.comic-neue-bold {
-  font-family: "Comic Neue", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ysabeau-<uniquifier> {
-  font-family: "Ysabeau", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
-
 a {
 	text-decoration: none;
   background-color: transparent;
