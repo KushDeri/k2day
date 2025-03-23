@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
 
-            function displayProducts(products) {
+            function displayProducts(data) {
                 const container = document.getElementById("products-container");
 
-                products.forEach(product => {
+                data.forEach(product => {
                     const productHTML = `
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
