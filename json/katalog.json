@@ -1,16 +1,17 @@
-[
-  {
-    "id": 11110500,
-    "image": "images/katalog/round_lab/toner_500ml.jpg",
-    "brand": "round lab",
-    "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
-    "price": 1260,
-    "v": 500,
-    "v_2": "ml",
-    "submenu": "face",
-    "category": "toner",
-    "details": "details/11110500.json"
-  },
+{
+  "products": [
+    {
+      "id": 11110500,
+      "image": "images/katalog/round_lab/toner_500ml.jpg",
+      "brand": "round lab",
+      "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
+      "price": 1260,
+      "v": 500,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "toner",
+      "details": "details/11110500.json"
+    },
 
 
 
@@ -19,13 +20,15 @@
 
 
 
-  {
-    "id": 999999,
-    "image": "images/products/cushion.jpg",
-    "name": "Кушон для макияжа",
-    "price": 2500,
-    "submenu": "makeup",
-    "category": "cushion",
-    "details": "details/2.json"
-  }
-]
+    {
+      "id": 999999,
+      "image": "images/products/cushion.jpg",
+      "name": "Кушон для макияжа",
+      "price": 2500,
+      "submenu": "makeup",
+      "category": "cushion",
+      "details": "details/2.json"
+    }
+  ]  
+}
+
