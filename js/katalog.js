@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     fetch("https://kushderi.github.io/k2day/json/katalog.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
@@ -5,12 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             function displayProducts(products) {
                 const container = document.getElementById("products-container");
-                if (!container) {
-        console.error("Элемент #products-container не найден!");
-        return;
-    }
 
-                
                 products.forEach(product => {
                     const productHTML = `
                         <div class="card">
@@ -23,13 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <!--<div>відгуки</div>-->
                             </div>
                         </div>
-        `;
-        container.insertAdjacentHTML("beforeend", productHTML);
-    });
-}
-
+                    `;
+                    container.insertAdjacentHTML("beforeend", productHTML);
+                });
+            }
         }) // Передаём в функцию
         //.catch(error => console.error("Ошибка загрузки JSON:", error));
 });
-
-
