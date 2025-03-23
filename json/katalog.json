@@ -1,5 +1,4 @@
-{
-  "products": [
+ [
     {
       "id": 11110500,
       "image": "images/katalog/round_lab/toner_500ml.jpg",
@@ -70,5 +69,3 @@
       "details": "details/2.json"
     }
   ]  
-}
-
