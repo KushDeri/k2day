@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
 
-            function displayProducts(data) {
+            function displayProducts(products) {
                 const container = document.getElementById("products-container");
                 if (!container) {
         console.error("Элемент #products-container не найден!");
