@@ -4,11 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://kushderi.github.io/k2day/json/katalog.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
+            displayProducts(data); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
+            
+        }) 
+        .catch(error => console.error("Ошибка загрузки JSON:", error));
+});
 
-            function displayProducts(data) {
+
+function displayProducts(products) {
                 const container = document.getElementById("products-container");
 
-                data.forEach(product => {
+                products.forEach(product => {
                     const productHTML = `
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
@@ -23,7 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
                     `;
                     container.insertAdjacentHTML("beforeend", productHTML);
                 });
-            }
-        }) // Передаём в функцию
-        //.catch(error => console.error("Ошибка загрузки JSON:", error));
-});
+}

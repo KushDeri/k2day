@@ -40,6 +40,13 @@ a {
 	background: #a9b9a2;
 }
 
+.coming-soon {
+	height: 27.4vw;
+	width: 99vw;
+	font-size: 100px;
+	text-align: center;
+}
+
 .vintaz {
 	font-family: "Caveat", cursive;
   font-optical-sizing: auto;
