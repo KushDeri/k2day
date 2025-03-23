@@ -14,13 +14,13 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 * {
 	font-family: 'Ysabeau', sans-serif;
 	font-weight: 700;
-  font-style: normal;
+  	font-style: normal;
 	color: #3d3a36;
 }
 
 a {
 	text-decoration: none;
-  background-color: transparent;
+  	background-color: transparent;
 }
 
 .folower {

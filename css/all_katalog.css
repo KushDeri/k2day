@@ -28,13 +28,35 @@
 }
 
 .card-info {
-
+    display: flex;
+    flex-direction: column;
 }
 
-.card-big {
+.brand{
+    font-weight: 1000;
+    font-size: 18px;
+}
+.name {
+    font-size: 18px;
+}
+.category {
+    color: rgba(0, 0, 0, 0.4);
+}
+.v {
+    
+}
+.price {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
+
+
+.big {
 
 }
-.card-big img {
+.big img {
     width: 520px;
     height: 720px;
     border-radius: 25px;
