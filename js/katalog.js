@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://kushderi.github.io/k2day/data.json") // Загружаем JSON
+    fetch("json/data.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
 
