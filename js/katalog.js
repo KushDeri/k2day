@@ -5,21 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
             function displayProducts(data) {
                 const container = document.getElementById("products-container");
+                if (!container) {
+        console.error("Элемент #products-container не найден!");
+        return;
+    }
 
+                
                 products.forEach(product => {
                     const productHTML = `
                         <div class="card">
-                            <a href="#"><img src="${products.image}" alt="${products.name}"></a>
+                            <a href="#"><img src="${product.image}" alt="${product.name}"></a>
                             <div class="card-info">
-                                <a href="#">${products.brand}</a>
-                                <a href="#">${products.name}</a>
-                                <a href="#">${products.category}</a>
-                                <div class="size-price">${products.price}</div>
+                                <a href="#">${product.brand}</a>
+                                <a href="#">${product.name}</a>
+                                <a href="#">${product.category}</a>
+                                <div class="size-price">${product.price}</div>
                                 <!--<div>відгуки</div>-->
                             </div>
                         </div>
         `;
-        container.innerHTML += productHTML;
+        container.insertAdjacentHTML("beforeend", productHTML);
     });
 }
 
