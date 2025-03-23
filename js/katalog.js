@@ -19,11 +19,11 @@ function displayProducts(products) {
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
                             <div class="card-info">
-                                <a href="#" class="brand">${product.brand}</a>
-                                <a href="#" class="name">${product.name}</a>
-                                <a href="#" class="category">${product.category}</a>
-                                <a href="#" class="v">${product.v} ${product.v_2}</a>
-                                <a href="#" class="price">${product.price} ₴</a>
+                                <a href="coming_soon.html" class="brand">${product.brand}</a>
+                                <a href="product.html" class="name">${product.name}</a>
+                                <a href="coming_soon.html" class="category">${product.category}</a>
+                                <a href="product.html" class="v">${product.v} ${product.v_2}</a>
+                                <a href="product.html" class="price">${product.price} ₴</a>
                                 <!--<div>відгуки</div>-->
                             </div>
                         </div>
