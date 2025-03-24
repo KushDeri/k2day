@@ -1,12 +1,13 @@
 .katalog {
     display: flex;
     flex-direction: row;
+     margin: 50px 0;
 }
 
 .filter {
     flex: 1;
     border-right: 1.5px solid #3d3a36;
-    margin: 20px 0 0 50px;
+    margin: 0 0 0 50px;
     font-size: 18px;
 }
 .filter li{
@@ -30,7 +31,7 @@
     /*justify-content: center;*/
     flex: 5;
     gap: 30px;
-    margin: 20px 20px 50px 50px;
+    margin: 0 20px 30px 50px;
 }
 
 .card {
