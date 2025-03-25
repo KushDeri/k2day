@@ -82,20 +82,18 @@
       "details": "details/11206051.json",
       "vegam": "eco"
     },
-
-
     {
-      "id": 11116400,
-      "image": "images/katalog/round_lab/11116400.jpg",
+      "id": 11218019,
+      "image": "images/katalog/round_lab/11218019.jpg",
       "brand": "ROUND LAB",
-      "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
-      "price": 1292,
-      "v": 400,
-      "v_2": "ml",
+      "name": "Сонцезахисний стік для обличчя Birch Juice Cream",
+      "price": 745,
+      "v": 19,
+      "v_2": "g",
       "submenu": "face",
-      "category": "Лосьйон",
+      "category": "Сан-стік",
       /*"tipe": "всі",*/
-      "details": "details/11116400.json"
+      "details": "details/11218019.json"
     },
 
 
