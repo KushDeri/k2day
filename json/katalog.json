@@ -24,7 +24,7 @@
       "category": "Тонер",
       "details": "details/11110500.json",
       "star": 5,
-      "vegam": "eco"
+      "vegan": "eco"
     },
     {
       "id": 11102200,
@@ -74,7 +74,7 @@
       "submenu": "face",
       "category": "Крем",
       "details": "details/11206051.json",
-      "vegam": "eco"
+      "vegan": "eco"
     },
     {
       "id": 11218019,
@@ -100,7 +100,7 @@
       "category": "Ампула",
       "details": "details/11308031.json",
       "star": "trand",
-      "vegam": "eco"
+      "vegan": "eco"
     },
 
 

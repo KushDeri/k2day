@@ -19,10 +19,15 @@ function displayProducts(products) {
                 //const filteredBrand = products.filter(product => product.brand === selectedBrand);
 
                 products.forEach(product => {
+                    let card = document.getElementById("card");
+                    if (product.vegan > 0) {
+                        card.classList.toggle("vegan");
+                    }
+
                     const productHTML = `
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
-                            <div class="card-info">
+                            <div class="card-info" id="card">
                                 <a href="brand.html" class="brand">${product.brand}</a>
                                 <a href="product.htmlbrand=${encodeURIComponent(product.brand)}" class="name">${product.name}</a>
                                 <a href="coming_soon.html" class="category">${product.category}</a>
@@ -33,6 +38,8 @@ function displayProducts(products) {
                         </div>
                     `;
                     container.insertAdjacentHTML("beforeend", productHTML); //ALL
+
+                    
 
                     //if (filteredDrand.length > 0) {
                     //    brand.insertAdjacentHTML("beforeend", productHTML); //BRAND
