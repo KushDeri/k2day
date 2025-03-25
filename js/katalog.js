@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayProducts(products) {
                 const container = document.getElementById("products-container");
+                const brand = document.getElementById("brand-container");
 
                 products.forEach(product => {
                     const productHTML = `
@@ -28,6 +29,10 @@ function displayProducts(products) {
                             </div>
                         </div>
                     `;
-                    container.insertAdjacentHTML("beforeend", productHTML);
+                    container.insertAdjacentHTML("beforeend", productHTML); //ALL
+
+                    if (true) {
+                        brand.insertAdjacentHTML("beforeend", productHTML); //BRAND
+                    }
                 });
 }
