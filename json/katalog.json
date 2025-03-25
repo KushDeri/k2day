@@ -10,7 +10,8 @@
       "submenu": "face",
       "category": "Тонер",
       /*"tipe": "всі",*/
-      "details": "details/11110500.json"
+      "details": "details/11110500.json",
+      "star": 5
     },
     {
       "id": 11110201,
@@ -24,6 +25,7 @@
       "category": "Тонер",
       /*"tipe": "всі",*/
       "details": "details/11110500.json",
+      "star": 5,
       "vegam": "eco"
     },
     {
@@ -52,7 +54,48 @@
       /*"tipe": "всі",*/
       "details": "details/11116400.json"
     },
+    {
+      "id": 11205050,
+      "image": "images/katalog/round_lab/11205050.jpg",
+      "brand": "ROUND LAB",
+      "name": "Сонцезахисний крем для обличчя Birch Juice Sunscreen",
+      "price": 850,
+      "v": 50,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "Санкрем",
+      /*"tipe": "всі",*/
+      "details": "details/11205050.json",
+      "star": 5
+    },
 
+
+    {
+      "id": 11116400,
+      "image": "images/katalog/round_lab/11116400.jpg",
+      "brand": "ROUND LAB",
+      "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
+      "price": 1292,
+      "v": 400,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "Лосьйон",
+      /*"tipe": "всі",*/
+      "details": "details/11116400.json"
+    },
+    {
+      "id": 11116400,
+      "image": "images/katalog/round_lab/11116400.jpg",
+      "brand": "ROUND LAB",
+      "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
+      "price": 1292,
+      "v": 400,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "Лосьйон",
+      /*"tipe": "всі",*/
+      "details": "details/11116400.json"
+    },
 
 
 
@@ -61,7 +104,7 @@
 
     {
       "id": 999999,
-      "image": "images//katalog/round_lab/toner_500ml.jpg",
+      "image": "images//katalog/round_lab/11110500.jpg",
       "name": "Кушон для макияжа",
       "price": 2500,
       "submenu": "makeup",
