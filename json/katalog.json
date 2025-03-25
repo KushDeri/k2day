@@ -22,7 +22,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Тонер",
-      /*"tipe": "всі",*/
       "details": "details/11110500.json",
       "star": 5,
       "vegam": "eco"
@@ -37,7 +36,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Гідрофільна олія",
-      /*"tipe": "всі",*/
       "details": "details/11102200.json"
     },
     {
@@ -50,7 +48,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Лосьйон",
-      /*"tipe": "всі",*/
       "details": "details/11116400.json"
     },
     {
@@ -63,7 +60,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Санкрем",
-      /*"tipe": "всі",*/
       "details": "details/11205050.json",
       "star": 5
     },
@@ -77,7 +73,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Крем",
-      /*"tipe": "всі",*/
       "details": "details/11206051.json",
       "vegam": "eco"
     },
@@ -91,7 +86,6 @@
       "v_2": "g",
       "submenu": "face",
       "category": "Сан-стік",
-      /*"tipe": "всі",*/
       "details": "details/11218019.json"
     },
     {
@@ -104,7 +98,6 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Ампула",
-      /*"tipe": "всі",*/
       "details": "details/11308031.json",
       "star": "trand",
       "vegam": "eco"
