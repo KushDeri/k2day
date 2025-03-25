@@ -108,7 +108,7 @@
 
 
 
-    /*{
+    {
       "id": 999999,
       "image": "images//katalog/round_lab/11110500.jpg",
       "name": "Кушон для макияжа",
@@ -116,5 +116,5 @@
       "submenu": "makeup",
       "category": "cushion",
       "details": "details/2.json"
-    }*/
+    }
   ]  
