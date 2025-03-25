@@ -1,7 +1,7 @@
  [
     {
       "id": 11110500,
-      "image": "images/katalog/round_lab/toner_500ml.jpg",
+      "image": "images/katalog/round_lab/11110500.jpg",
       "brand": "ROUND LAB",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
       "price": 1260,
@@ -9,34 +9,35 @@
       "v_2": "ml",
       "submenu": "face",
       "category": "Тонер",
-      "tipe": "всі",
+      /*"tipe": "всі",*/
       "details": "details/11110500.json"
     },
     {
-      "id": 11110300,
-      "image": "images/katalog/round_lab/toner_500ml.jpg",
+      "id": 11110201,
+      "image": "images/katalog/round_lab/11110201.jpg",
       "brand": "ROUND LAB",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
-      "price": 1249,
-      "v": 300,
-      "v_2": "ml",
-      "submenu": "face",
-      "category": "Тонер",
-      "tipe": "всі",
-      "details": "details/11110500.json"
-    },
-    {
-      "id": 11110200,
-      "image": "images/katalog/round_lab/toner_500ml.jpg",
-      "brand": "ROUND LAB",
-      "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
-      "price": 658,
+      "price": 575,
       "v": 200,
       "v_2": "ml",
       "submenu": "face",
       "category": "Тонер",
-      "tipe": "всі",
-      "details": "details/11110500.json"
+      /*"tipe": "всі",*/
+      "details": "details/11110500.json",
+      "vegam": "eco"
+    },
+    {
+      "id": 11102200,
+      "image": "images/katalog/round_lab/11102200.jpg",
+      "brand": "ROUND LAB",
+      "name": "Очищуюча гідрофільна олія для обличчя 1025 Dokdo Cleansing Oil",
+      "price": 852,
+      "v": 200,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "Гідрофільна олія",
+      /*"tipe": "всі",*/
+      "details": "details/11102200.json"
     },
     {
       "id": 11110201,
