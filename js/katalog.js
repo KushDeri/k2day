@@ -16,7 +16,7 @@ function displayProducts(products) {
                 const brand = document.getElementById("brand-container");
 
                 // Фильтруем товары по бренду
-                const filteredBrand = products.filter(product => product.brand === selectedBrand);
+                const filteredBrand = products.filter(productB => productB.brand === selectedBrand);
 
                 products.forEach(product => {
                     const productHTML = `
