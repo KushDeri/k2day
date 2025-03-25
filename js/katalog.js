@@ -34,10 +34,10 @@ function displayProducts(products) {
                     `;
                     container.insertAdjacentHTML("beforeend", productHTML); //ALL
 
-                    if (filteredDrand.length > 0) {
-                        brand.insertAdjacentHTML("beforeend", productHTML); //BRAND
-                    } else {
-                        brandContainer.innerHTML = "<p>Товары этого бренда пока отсутствуют.</p>";
-            }
+                    //if (filteredDrand.length > 0) {
+                    //    brand.insertAdjacentHTML("beforeend", productHTML); //BRAND
+                    //} else {
+                    //    brandContainer.innerHTML = "<p>Товары этого бренда пока отсутствуют.</p>";
+                    //}
                 });
 }
