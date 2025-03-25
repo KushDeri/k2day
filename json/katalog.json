@@ -1,6 +1,6 @@
  [
     {
-      "id": 11110500,
+      "id": 1,
       "image": "images/katalog/round_lab/11110500.jpg",
       "brand": "ROUND LAB",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
@@ -108,7 +108,7 @@
 
 
 
-    {
+    /*{
       "id": 999999,
       "image": "images//katalog/round_lab/11110500.jpg",
       "name": "Кушон для макияжа",
@@ -116,5 +116,5 @@
       "submenu": "makeup",
       "category": "cushion",
       "details": "details/2.json"
-    }
+    }*/
   ]  
