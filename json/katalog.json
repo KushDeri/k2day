@@ -40,18 +40,17 @@
       "details": "details/11102200.json"
     },
     {
-      "id": 11110201,
-      "image": "images/katalog/round_lab/toner_500ml.jpg",
+      "id": 11116400,
+      "image": "images/katalog/round_lab/11116400.jpg",
       "brand": "ROUND LAB",
-      "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
-      "price": 574,
-      "v": 200,
+      "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
+      "price": 1292,
+      "v": 400,
       "v_2": "ml",
       "submenu": "face",
-      "category": "Тонер",
-      "tipe": "всі",
-      "eco": "упаковка еко",
-      "details": "details/11110500.json"
+      "category": "Лосьйон",
+      /*"tipe": "всі",*/
+      "details": "details/11116400.json"
     },
 
 
