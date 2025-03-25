@@ -16,7 +16,7 @@ function displayProducts(products) {
                 const brand = document.getElementById("brand-container");
 
                 // Фильтруем товары по бренду
-                const filteredBrand = products.filter(productB => productB.brand === selectedBrand);
+                //const filteredBrand = products.filter(product => product.brand === selectedBrand);
 
                 products.forEach(product => {
                     const productHTML = `
@@ -38,6 +38,6 @@ function displayProducts(products) {
                         brand.insertAdjacentHTML("beforeend", productHTML); //BRAND
                     } else {
                         brandContainer.innerHTML = "<p>Товары этого бренда пока отсутствуют.</p>";
-                    }
+            }
                 });
 }
