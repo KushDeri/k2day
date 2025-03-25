@@ -95,6 +95,21 @@
       /*"tipe": "всі",*/
       "details": "details/11218019.json"
     },
+    {
+      "id": 11308031,
+      "image": "images/katalog/round_lab/11308031.jpg",
+      "brand": "ROUND LAB",
+      "name": "Заспокілива ампула для обличчя Pine Calming Cica Pad",
+      "price": 590,
+      "v": 30,
+      "v_2": "ml",
+      "submenu": "face",
+      "category": "Ампула",
+      /*"tipe": "всі",*/
+      "details": "details/11308031.json",
+      "star": "trand",
+      "vegam": "eco"
+    },
 
 
 
