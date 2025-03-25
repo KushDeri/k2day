@@ -68,21 +68,22 @@
       "details": "details/11205050.json",
       "star": 5
     },
-
-
     {
-      "id": 11116400,
-      "image": "images/katalog/round_lab/11116400.jpg",
+      "id": 11206051,
+      "image": "images/katalog/round_lab/11206051.jpg",
       "brand": "ROUND LAB",
-      "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
-      "price": 1292,
-      "v": 400,
+      "name": "Зволожувальний крем для обличчя Birch Juice Cream",
+      "price": 700,
+      "v": 50,
       "v_2": "ml",
       "submenu": "face",
-      "category": "Лосьйон",
+      "category": "Крем",
       /*"tipe": "всі",*/
-      "details": "details/11116400.json"
+      "details": "details/11206051.json",
+      "vegam": "eco"
     },
+
+
     {
       "id": 11116400,
       "image": "images/katalog/round_lab/11116400.jpg",
