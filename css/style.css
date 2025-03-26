@@ -25,7 +25,7 @@ a {
 
 .folower {
 	background: #a56b4b;
-	padding: 20px;
+	padding: 70px 170px;
 }
 
 .folower h2 {
@@ -37,7 +37,8 @@ a {
 
 .floor_text {
 	margin: 20px;
-	background: #a9b9a2;
+	/*background: #a9b9a2;*/
+	padding: 70px 150px;
 }
 
 .coming-soon {
