@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Функция для заполнения фильтров
     function populateFilters(products) {
         const brandFilter = document.getElementById("brand-filter");
-        const categoryFilter = document.getElementById("category-filter");
+        //const categoryFilter = document.getElementById("category-filter");
 
         const brands = [...new Set(products.map(p => p.brand))]; // Уникальные бренды
-        const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
+        //const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
 
 
 
@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
             brandFilter.innerHTML += `<option value="${brand}">${brand}</option>`;
         });
 
-        categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
-        categories.forEach(category => {
-            categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
-        });
+        //categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
+        //categories.forEach(category => {
+        //    categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
+        //});
 
         // Добавляем обработчики событий для фильтрации
         brandFilter.addEventListener("change", filterProducts);
