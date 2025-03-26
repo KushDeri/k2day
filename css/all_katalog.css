@@ -102,12 +102,15 @@
 
 /* Стили для телефонов */
 @media (max-width: 600px) {
+    .katalog {
+        flex-direction: column;
+    }
     .filter{
-        display: flex;
+        border-right: none;
         flex: none;
     }
     .all-card {
-        display: flex;
         flex: none;
+        justify-content: center;
     }
 }
