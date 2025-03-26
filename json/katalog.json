@@ -109,12 +109,13 @@
 
 
     {
-      "id": 999999,
-      "image": "images//katalog/round_lab/11110500.jpg",
+      "id": 25101000,
+      "image": "images//katalog/JungSaemMool/25101000.jpg",
       "name": "Кушон для макияжа",
-      "price": 2500,
+      "price": 1675,
       "submenu": "makeup",
-      "category": "cushion",
-      "details": "details/2.json"
+      "category": "Кушон",
+      "details": "details/25101000.json",
+      "star": 5
     }
   ]  
