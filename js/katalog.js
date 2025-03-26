@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             allProducts = data; // Сохраняем JSON для последующей фильтрации
             displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
-            populateFilters(allProducts);            
+            populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
         .catch(error => console.error("Ошибка загрузки JSON:", error));
 
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
                 products.forEach(product => {
-                    let card = document.getElementById("card");
-                    if (product.vegan > 0) {
-                        card.classList.toggle("vegan");
-                    }
+                    //let card = document.getElementById("card");
+                    //if (product.vegan > 0) {
+                    //    card.classList.toggle("vegan");
+                    //}
 
                     const productHTML = `
                         <div class="card">
