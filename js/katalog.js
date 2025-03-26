@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const brands = [...new Set(products.map(p => p.brand))]; // Уникальные бренды
         const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
 
+
+
         brandFilter.innerHTML = `<option value="">Все бренды</option>`;
         brands.forEach(brand => {
             brandFilter.innerHTML += `<option value="${brand}">${brand}</option>`;
@@ -61,6 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         brandFilter.addEventListener("change", filterProducts);
         categoryFilter.addEventListener("change", filterProducts);
     }
+
+
 
     // Фильтрация товаров
     function filterProducts() {
