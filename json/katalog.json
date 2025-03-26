@@ -114,6 +114,8 @@
       "brand": "JUNG SAEM MOOL",
       "name": "Кушон для макияжа",
       "price": 1675,
+      "v": 14,
+      "v_2": "g",
       "submenu": "makeup",
       "category": "Кушон",
       "details": "details/25101000.json",
