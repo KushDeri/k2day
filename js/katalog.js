@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
                             <div class="card-info" id="card">
-                                <a href="katalog.html?brand=${encodeURIComponent(product.brand)}" class="brand">${product.brand}</a>
+                                <a href="brand.html?brand=${encodeURIComponent(product.brand)}" class="brand">${product.brand}</a>
                                 <a href="product.html?name=${encodeURIComponent(product.name)}" class="name">${product.name}</a>
                                 <a href="coming_soon.html?category=${encodeURIComponent(product.category)}" class="category">${product.category}</a>
                                 <a href="product.html" class="v">${product.v} ${product.v_2}</a>
