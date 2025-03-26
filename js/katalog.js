@@ -49,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        brandFilter.innerHTML = `<option value="">Все бренды</option>`;
+        brandFilter.innerHTML = `<option value="">Всі бренди</option>`;
         brands.forEach(brand => {
             brandFilter.innerHTML += `<option value="${brand}">${brand}</option>`;
         });
 
-        categoryFilter.innerHTML = `<option value="">Все категории</option>`;
+        categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
         categories.forEach(category => {
             categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
         });
