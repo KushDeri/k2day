@@ -1,12 +1,12 @@
-.abouteMe {
+.aboutMe {
 	display: inherit;
 	text-align: center;
-	margin: 3.5em 0 10em 0;
+	margin: 40px 70px;
 }
 
-.abouteMe h1 {
-	font-size: 80px;
+.aboutMe h1 {
+	font-size: 50px;
 }
-.abouteMe p {
-	
+.aboutMe p {
+
 }
