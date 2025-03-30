@@ -214,6 +214,7 @@
         }
 
         .menu {
+            padding: 0 30px;
             display: none;
             flex-direction: column;
             position: absolute;
@@ -227,12 +228,14 @@
         }
         .menu.active {
             display: flex;
-            flex-direction: column;
         }
 
         .menu_d, .menu_d_end {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
+        }
+        .menu_d {
+            border-right: none;
         }
         .menu ul {
             margin: 0;

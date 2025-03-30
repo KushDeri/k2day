@@ -70,6 +70,12 @@
 }
 .name {
     font-size: 18px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .name:hover {
     color: #FE656E;
