@@ -131,6 +131,7 @@
     .all-card {
         flex: none;
         justify-content: center;
+        margin: 40px 30px 40px 30px;
     }
 
     .card {
