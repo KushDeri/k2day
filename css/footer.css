@@ -15,7 +15,8 @@
     gap: 30px;
 }
 .footer-container img {
-    width: 20px;
+    width: 24px;
+    background: #e2c6c0;
 }
 
 /* Логотип */
@@ -24,7 +25,7 @@
 }
 .footer-logo img {
     max-width: 60px;
-    background: #e2c6c0;
+    /*background: #e2c6c0;*/
 }
 
 /* Меню */
@@ -55,11 +56,6 @@
 .footer-contacts {
     background: #e2c6c0;
 }
-/*.footer-contacts p {
-    margin: 5px 0;
-    font-size: 14px;
-    background: #e2c6c0;
-}*/
 .footer-contacts a {
     color: #FE656E;
 }
@@ -73,9 +69,9 @@
 }
 
 .footer-socials img {
-    width: 24px;
+    /*width: 24px;*/
     transition: opacity 0.3s;
-    background: #e2c6c0;
+    /*background: #e2c6c0;*/
 }
 
 .footer-socials img:hover {
