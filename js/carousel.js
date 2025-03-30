@@ -7,6 +7,8 @@ const carouselSlides = document.querySelector('.carousel-slides');
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 
+const container = document.getElementById("carousel-main");
+container.innerHTML = "";
 const productHTML = `
         <li class="slide">
           <a href="#">
@@ -18,6 +20,7 @@ const productHTML = `
           </a>
         </li>
 `;
+container.insertAdjacentHTML("beforeend", productHTML);
 
 
 
