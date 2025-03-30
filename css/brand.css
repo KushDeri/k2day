@@ -1,13 +1,13 @@
-.brand {
+.brand-carusel {
 	display: inline-block;
-	/*padding: 60px 0;*/
-	/*background: #a56b4b;*/
+	padding: 60px 0;
+	background: #a56b4b;
 	overflow: hidden;
     white-space: nowrap;
     position: relative;
     width: 100%;
 }
-.brand img {
+.brand-carusel img {
 	background: #a56b4b;
 	height: 35px; /* Всі логотипи будуть однакової висоти */
     width: auto; /* Зберігаємо пропорції */
