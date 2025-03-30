@@ -180,9 +180,65 @@
 
 
 
+
 /* Стили для планшетов */
 @media (min-width: 601px) and (max-width: 1024px) {
-    
+    .header{
+            display: flex;
+            align-items: center;
+            padding: 20px 20px 10px 20px;
+            width: 94.5%;
+        }
+        .menu_back{
+            padding-top: 4.7em;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .burger-menu {
+            display: flex;
+            align-items: flex-end;
+        }
+        .burger-menu .open {
+            display: flex;
+            transition: font-size 0.3s;
+            padding-right: 10px;
+        }
+        .burger-menu .close {
+            display: none;
+            transition: font-size 0.3s;
+            padding-right: 10px;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            height: 100vh;
+            width: auto;
+        }
+        .menu .main {
+            border-top: none;
+        }
+        .menu.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu_d, .menu_d_end {
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul {
+            margin: 0;
+            /*flex-direction: column;
+            width: 100%;*/
+        }
 }
 
 
@@ -217,6 +273,7 @@
         	transition: font-size 0.3s;
         	padding-right: 10px;
         }
+
         .menu {
             display: none;
             flex-direction: column;
