@@ -7,6 +7,21 @@ const carouselSlides = document.querySelector('.carousel-slides');
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 
+const productHTML = `
+        <li class="slide">
+          <a href="#">
+            <div>
+              <picture>
+                <img src="images/carousel.png">
+              </picture>
+            </div>
+          </a>
+        </li>
+`;
+
+
+
+
 function showSlide(index) {
     if (index >= totalSlides) {
         currentSlide = 0;
@@ -21,14 +36,10 @@ function showSlide(index) {
 
 nextButton.addEventListener('click', () => {
     showSlide(currentSlide + 1);
-    //currentSlide = (currentSlide + 1) % slides;
-    //updateSlider();
 });
 
 prevButton.addEventListener('click', () => {
     showSlide(currentSlide - 1);
-    //currentSlide = (currentSlide - 1 + slides) % slides;
-    //updateSlider();
 });
 
 // Автоперемикання кожні 5 секунд
