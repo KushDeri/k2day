@@ -38,6 +38,8 @@
   <link rel="stylesheet" type="text/css" href="css/blok_3.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
 
+  <link rel="fetch" type="text/json" href="json/katalog.json">
+
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -118,39 +120,7 @@
   <div class="blok_3">
     <div class="thebest"><a href="#">ЗЕ БЕСТ</a></div>
     <ul class="best">
-      <li>
-        <a href="#">
-          <img src="images/carousel_1.png">
-          <div class="info">
-            <p>BREND</p>
-            <p>Name</p>
-            <p>whot</p>
-            <p>$</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/carousel_1.png">
-          <div class="info">
-            <p>BREND</p>
-            <p>Name</p>
-            <p>whot</p>
-            <p>$</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/carousel_1.png">
-          <div class="info">
-            <p>BREND</p>
-            <p>Name</p>
-            <p>whot</p>
-            <p>$</p>
-          </div>
-        </a>
-      </li>
+      <div class="all-card" id="products-container"></div>
     </ul>
   </div>
 
@@ -177,6 +147,7 @@
   <!--js-->
   <script src="js/menu.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/katalog.js"></script>
   <script src="js/floor.js"></script>
 
 </body>

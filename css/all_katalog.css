@@ -105,6 +105,8 @@
 
 
 
+
+
 /* Стили для планшетов */
 @media (min-width: 601px) and (max-width: 1024px) {
     
@@ -131,5 +133,8 @@
         height: 150px;
         width: 150px;
         border-radius: 10px;
+    }
+    .name {
+        
     }
 }
