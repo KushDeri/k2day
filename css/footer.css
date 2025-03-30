@@ -14,6 +14,9 @@
     justify-content: center;
     gap: 30px;
 }
+.footer-container img {
+    width: 20px;
+}
 
 /* Логотип */
 .footer-logo {
@@ -52,12 +55,11 @@
 .footer-contacts {
     background: #e2c6c0;
 }
-.footer-contacts p {
+/*.footer-contacts p {
     margin: 5px 0;
     font-size: 14px;
     background: #e2c6c0;
-}
-
+}*/
 .footer-contacts a {
     color: #FE656E;
 }
