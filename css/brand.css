@@ -1,8 +1,7 @@
 .brand {
 	display: inline-block;
-	padding: 60px 0;
-	/*max-width: 100px;*/
-	background: #a56b4b;
+	/*padding: 60px 0;*/
+	/*background: #a56b4b;*/
 	overflow: hidden;
     white-space: nowrap;
     position: relative;
