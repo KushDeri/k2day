@@ -3,7 +3,6 @@
     background: #e2c6c0;
     padding: 30px 20px;
     text-align: center;
-    /*border-top: 1px solid #ddd;*/
 }
 
 /* Контейнер */
@@ -25,7 +24,6 @@
 }
 .footer-logo img {
     max-width: 60px;
-    /*background: #e2c6c0;*/
 }
 
 /* Меню */
@@ -71,7 +69,6 @@
 .footer-socials img {
     /*width: 24px;*/
     transition: opacity 0.3s;
-    /*background: #e2c6c0;*/
 }
 
 .footer-socials img:hover {
