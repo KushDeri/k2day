@@ -81,7 +81,7 @@
     display: none;
 }
 .menu-katalog:hover .tabl-content { /*все id табл-конт*/
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
 }
 
@@ -181,6 +181,8 @@
 
 
 
+
+
 /* Стили для планшетов */
 @media (min-width: 601px) and (max-width: 1024px) {
     .header{
@@ -239,8 +241,6 @@
         }
         .menu ul {
             margin: 0;
-            /*flex-direction: column;
-            width: 100%;*/
         }
 }
 
