@@ -10,3 +10,29 @@
 	border-bottom: 1.5px solid #3d3a36;
 	border-top: 1.5px solid #3d3a36;
 }
+
+.all-card-best {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 170px 40px 170px;
+}
+
+
+
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+}
+
+/* Стили для телефонов */
+@media (max-width: 600px) {
+	.all-card-best {
+        flex: none;
+        /*justify-content: center;*/
+        justify-content: space-between;
+        margin: 40px 30px 40px 30px;
+    }
+}
