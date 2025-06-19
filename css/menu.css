@@ -39,7 +39,7 @@
 .menu ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0; /* Відступ зверху */
+    /*margin: 20px 0 0;*/ /* Відступ зверху */
 }
 
 .menu_d,
@@ -72,17 +72,10 @@
     color: #FE656E; /* Колір при наведенні */
 }
 
-/*MANU MAIN*/
-.menu-katalog {
-  position: relative;
-}
+/*MENU MAIN*/
 
 /*комп выпад-меню*/
-/*.menu-katalog:hover .dropdown-menu {
-    display: block;
-
-}*/
-.menu-katalog.active .dropdown-menu {
+.menu-katalog:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
@@ -94,15 +87,15 @@
     justify-content: center;
 }*/
 
-/*MANU 1*/
+/*MENU 1*/
 .dropdown-menu {
-    /*display: none;*/
     position: absolute;
     width: 100%;
     left: 0;
     padding: 0;
-    top: 86%;
-    z-index: -1;
+    margin: 0;
+    top: 100%;
+    z-index: 0;
     background: #E2C6C0;
     border-top: 1.5px solid #3d3a36;
     opacity: 0;
@@ -118,7 +111,7 @@
 }
 
 
-/*MANU 2*/
+/*MENU 2*/
 .tabl-content {
 	display: none;
 	position: absolute;
@@ -134,7 +127,7 @@
 	color: #FE656E;
 }
 
-/*MANU 2.1*/
+/*MENU 2.1*/
 .sub-dropdown {
     top: 0;
     left: 100%;
@@ -157,7 +150,10 @@
 	flex: 1;
 }
 
-#face: hover #face-submenu {
+.submenu:hover .tabl-content {
+    display: block;
+}
+.subememu-face:hover .sub-dropdown-face {
     display: flex;
 } 
 
