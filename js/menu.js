@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let tabl = document.querySelectorAll(".tabl-content");
             //let tabs = document.querySelectorAll(".tabs");
             let header = document.querySelector(".header");
-            let dropdown = document.querySelectorAll(".dropdown-menu");
+            let dropdowns = document.querySelectorAll(".dropdown-menu");
 
             const menuKatalog = document.querySelector('.menu-katalog');
             const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     logo.style.width = "100px";
                     logo.style.transition = "0.3s";
 
-                    dropdown.forEach(link => {
+                    dropdowns.forEach(link => {
                         link.style.top = "91.5%";
                     });
 
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     // Повертаємо стандартні розміри
                     logo.style.width = "130px";
-                    dropdown.forEach(link => {
+                    dropdowns.forEach(link => {
                         link.style.top = "86%";
                     });
                     menuLinks.forEach(link => {
