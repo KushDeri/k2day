@@ -18,6 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
             let header = document.querySelector(".header");
             let dropdown = document.querySelectorAll(".dropdown-menu");
 
+            const menuKatalog = document.querySelector('.menu-katalog');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            let timeout;
+
+
+
+            // Показываем меню при наведении
+            menuKatalog.addEventListener('mouseenter', () => {
+                clearTimeout(timeout); // отменяем таймер скрытия
+                menuKatalog.classList.add('active');
+            });
+
+            // Устанавливаем таймер на скрытие
+            menuKatalog.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    menuKatalog.classList.remove('active');
+                }, 400); // задержка перед исчезновением
+            });
+
+            // Также учитываем сам .dropdown-menu, чтобы не исчезало, если мышка туда перешла
+            dropdownMenu.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                menuKatalog.classList.add('active');
+            });
+
+            dropdownMenu.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    menuKatalog.classList.remove('active');
+                }, 400);
+            });
+
+
 
 
             // Открывашка меню
@@ -102,93 +135,3 @@ document.addEventListener("DOMContentLoaded", function () {
         //.catch(error => console.error("Ошибка загрузки меню:", error));
 });
 
-
-
-// Функция для корректной работы выпадающего меню
-function setupMenu() {
-    let menuKatalog = document.querySelector(".menu-katalog");
-    let dropdownMenu = document.querySelector(".dropdown-menu");
-    let dropdownTabl = document.querySelector(".tabl-contents");
-
-    if (!menuKatalog || !dropdownMenu || !dropdownTabl) return;
-
-    let timeout;
-
-    menuKatalog.addEventListener("mouseenter", function () {
-        clearTimeout(timeout);
-        dropdownMenu.style.display = "block";
-        dropdownTabl.style.display = "flex";
-    });
-    dropdownMenu.addEventListener("mouseenter", function () {
-        clearTimeout(timeout);
-        dropdownTabl.style.display = "flex";
-    });
-
-
-    menuKatalog.addEventListener("mouseleave", function () {
-        timeout = setTimeout(function () {
-            dropdownMenu.style.display = "none";
-            dropdownTabl.style.display = "none";
-        }, 3000);
-    });
-
-
-    dropdownMenu.addEventListener("mouseenter", function () {
-        clearTimeout(timeout);
-    });
-
-    dropdownMenu.addEventListener("mouseleave", function () {
-        timeout = setTimeout(function () {
-            dropdownMenu.style.display = "none";
-        }, 3000);
-    });
-
-
-    dropdownTabl.addEventListener("mouseenter", function () {
-        clearTimeout(timeout);
-    });
-
-    dropdownTabl.addEventListener("mouseleave", function () {
-        timeout = setTimeout(function () {
-            dropdownTabl.style.display = "none";
-        }, 3000);
-    });
-
-
-
-    //Соответствиде выпвдающего меню и таблицы
-    document.querySelectorAll(".submenu").forEach((category) => {
-        category.addEventListener("mouseenter", function () {
-            // Скрываем все подменю
-            document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
-                submenu.style.display = "none";
-            });
-
-            // Определяем ID нужного подменю через data-category
-            const categoryName = this.getAttribute("data-category");
-            const subMenu = document.getElementById(categoryName + "-submenu");
-
-            // Показываем нужное подменю
-            if (subMenu) {
-                subMenu.style.display = "flex";
-            }
-        });
-    });
-
-    // При уходе мыши скрываем все подменю
-    //document.querySelector(".tabs").addEventListener("mouseleave", function () {
-    //    document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
-    //        submenu.style.display = "none";
-    //    });
-    //});
-    document.querySelectorAll(".submenu").forEach((category) => {
-        category.addEventListener("mouseleave", function () {
-            setTimeout(() => {
-                const subMenu = document.getElementById(this.getAttribute("data-category") + "-submenu");
-                if (subMenu) subMenu.style.display = "none";
-            }, 500); // небольшая задержка, чтобы можно было переместиться в подменю
-        });
-    });
-
-
-}

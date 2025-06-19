@@ -72,21 +72,31 @@
     color: #FE656E; /* Колір при наведенні */
 }
 
+/*MANU MAIN*/
+.menu-katalog {
+  position: relative;
+}
 
 /*комп выпад-меню*/
-.menu-katalog:hover .dropdown-menu {
+/*.menu-katalog:hover .dropdown-menu {
     display: block;
+
+}*/
+.menu-katalog.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
 }
 .menu-katalog:hover .dropdown-menu img{
     display: none;
 }
-.menu-katalog:hover .tabl-content { /*все id табл-конт*/
+/*.menu-katalog:hover .tabl-content { 
     display: flex;
     justify-content: center;
-}
+}*/
 
+/*MANU 1*/
 .dropdown-menu {
-    display: none;
+    /*display: none;*/
     position: absolute;
     width: 100%;
     left: 0;
@@ -95,6 +105,9 @@
     z-index: -1;
     background: #E2C6C0;
     border-top: 1.5px solid #3d3a36;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .dropdown-menu li {
 	background: #E2C6C0;
@@ -105,7 +118,7 @@
 }
 
 
-
+/*MANU 2*/
 .tabl-content {
 	display: none;
 	position: absolute;
@@ -121,17 +134,17 @@
 	color: #FE656E;
 }
 
+/*MANU 2.1*/
 .sub-dropdown {
     top: 0;
     left: 100%;
-    display: flex;
+    display: none;
     align-items: flex-start;
     text-align: center;
     gap: 20px;
 }
 
-.right,
-.left {
+.right, .left {
 	display: flex;
 	text-align: left;
 	flex-direction: column;
@@ -143,6 +156,11 @@
 .left {
 	flex: 1;
 }
+
+#face: hover #face-submenu {
+    display: flex;
+} 
+
 
 .all-tabs-panel {
 	display: flex;
