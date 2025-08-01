@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let allProducts = []; // Сохраняем все товары для фильтрации
 
-    fetch("https://kushderi.github.io/k2day/json/katalog.json") // Загружаем JSON
+    fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
             allProducts = data; // Сохраняем JSON для последующей фильтрации
