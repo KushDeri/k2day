@@ -24,7 +24,7 @@
       "category": "Тонер",
       "details": "details/11110500.json",
       "star": 5,
-      "vegan": "eco"
+      "status": "eco"
     },
     {
       "id": 11102200,
@@ -74,7 +74,7 @@
       "submenu": "face",
       "category": "Крем",
       "details": "details/11206051.json",
-      "vegan": "eco"
+      "status": "eco"
     },
     {
       "id": 11218019,
@@ -100,7 +100,7 @@
       "category": "Ампула",
       "details": "details/11308031.json",
       "star": "trand",
-      "vegan": "eco"
+      "status": "eco"
     },
 
 
@@ -119,6 +119,7 @@
       "submenu": "makeup",
       "category": "Кушон",
       "details": "details/25101000.json",
-      "star": 5
+      "star": 5,
+      "status": "vegan"
     }
   ]  

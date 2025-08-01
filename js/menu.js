@@ -111,22 +111,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             //???
-            document.querySelectorAll(".submenu").forEach((category) => {
-                category.addEventListener("mouseenter", function () {
-                    document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
-                        submenu.style.display = "none";
-                    });
-                    const subMenu = this.querySelector(".sub-dropdown");
-                    if (subMenu) {
-                        subMenu.style.display = "block";
-                    }
-                });
-            });
-            document.querySelector(".dropdown").addEventListener("mouseleave", function () {
-                document.querySelectorAll(".dropdown-menu, .sub-dropdown").forEach((menu) => {
-                    menu.style.display = "none";
-                });
-            });
+            //document.querySelectorAll(".submenu").forEach((category) => {
+            //    category.addEventListener("mouseenter", function () {
+            //        document.querySelectorAll(".sub-dropdown").forEach((submenu) => {
+            //            submenu.style.display = "none";
+            //        });
+            //        const subMenu = this.querySelector(".sub-dropdown");
+            //        if (subMenu) {
+            //            subMenu.style.display = "block";
+            //        }
+            //    });
+            //});
+            //document.querySelector(".dropdown").addEventListener("mouseleave", function () {
+            //    document.querySelectorAll(".dropdown-menu, .sub-dropdown").forEach((menu) => {
+            //        menu.style.display = "none";
+            //    });
+            //});
 
 
 

@@ -150,10 +150,10 @@
 	flex: 1;
 }
 
-.submenu:hover .tabl-content {
+.submenu-face:hover .tabl-content {
     display: block;
 }
-.face:hover .sub-dropdown-face {
+.submenu-face:hover .sub-dropdown-face {
     display: flex;
 } 
 
