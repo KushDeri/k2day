@@ -105,7 +105,7 @@
 .dropdown-menu li {
 	background: #E2C6C0;
 }
-.submenu {
+.submenu-face, .submenu-makeup, .submenu-haire {
 	display: inline-block;
 	padding: 15px;
 }
@@ -153,9 +153,9 @@
 .submenu-face:hover .tabl-content {
     display: block;
 }
-.submenu-face:hover .sub-dropdown-face {
+/*.submenu-face:hover .sub-dropdown-face {
     display: flex;
-} 
+} */
 
 
 .all-tabs-panel {
