@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
-            allProducts = Object.values(data).flat(); // Сохраняем JSON для последующей фильтрации
+            allProducts = Object.values(data).flat(); // Объединяем все массивы в один
             displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Добавляем обработчики событий для фильтрации
         brandFilter.addEventListener("change", filterProducts);
-        categoryFilter.addEventListener("change", filterProducts);
+        //categoryFilter.addEventListener("change", filterProducts);
     }
 
 
