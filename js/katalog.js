@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
-            allProducts = Object.values(data).flat(); // Объединяем все массивы в один
+            allProducts = data.products; //только массив products
+            //allProducts = Object.values(data).flat(); // Объединяем все массивы в один
             displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
@@ -17,7 +18,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 const container = document.getElementById("products-container");
                 container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
+                // Создаем словари (id → имя) для быстрого доступа
+                const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
+                const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
+                const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
+                const starMap = Object.fromEntries(data.star.map(s => [s.id, s.name]));
+
+
+
                 products.forEach(product => {
+                    const brandName = brandMap[product.brandId] || "Невідомо";
+                    const categoryName = categoryMap[product.categoryId] || "Невідомо";
+                    const starName = starMap[product.starId] || "";
+                    const statusName = statusMap[product.statusId] || "";
+
+                    
                     //let card = document.getElementById("card");
                     //if (product.vegan > 0) {
                     //    card.classList.toggle("vegan");
