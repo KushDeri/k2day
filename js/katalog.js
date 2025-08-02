@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    function displayProducts(products) {
+    function displayProducts(productsArray) {
         const container = document.getElementById("products-container");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
 
-        products.forEach(product => {
+        productsArray.forEach(product => {
             const submenuName = submenuMap[product.submenuId] || "Невідомо";
             const brandName = brandMap[product.brandId] || "Невідомо";
             const categoryName = categoryMap[product.categoryId] || "Невідомо";
