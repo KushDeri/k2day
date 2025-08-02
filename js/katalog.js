@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
                 // Создаем словари (id → имя) для быстрого доступа
-                const submenuMap = Object.fromEntries(data.submenu.map(a => [a.id, a.name]));
+                const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
                 const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
                 const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
                 const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
