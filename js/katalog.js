@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
         .catch(error => console.error("Ошибка загрузки JSON:", error));
-        alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
+        //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
 
@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="card">
                             <a href="#"><img src="${product.image}" alt="${product.name}"></a>
                             <div class="card-info" id="card">
-                                <a href="brand.html?brand=${encodeURIComponent(product.brand)}" class="brand">${product.brand}</a>
+                                <a href="brand.html?brand=${encodeURIComponent(product.brandId)}" class="brand">${product.brandId}</a>
                                 <a href="product.html?name=${encodeURIComponent(product.name)}" class="name">${product.name}</a>
-                                <a href="coming_soon.html?category=${encodeURIComponent(product.category)}" class="category">${product.category}</a>
+                                <a href="coming_soon.html?category=${encodeURIComponent(product.categoryId)}" class="category">${product.categoryId}</a>
                                 <a href="product.html" class="v">${product.v} ${product.v_2}</a>
                                 <a href="product.html" class="price">${product.price} ₴</a>
                                 <!--<div>відгуки</div>-->
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         brandFilter.innerHTML = `<option value="">Всі бренди</option>`;
         brands.forEach(brand => {
-            brandFilter.innerHTML += `<option value="${brand}">${brand}</option>`;
+            brandFilter.innerHTML += `<option value="${brandId}">${brandId}</option>`;
         });
 
         //categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
