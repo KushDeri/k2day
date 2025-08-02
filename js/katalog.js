@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
         // Создаем словари (id → имя) для быстрого доступа
-        const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
-        const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
-        const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
-        const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
-        const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
-        const starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+        let submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
+        let brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
+        let categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
+        let typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
+        let statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
+        let starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
 
 
 
