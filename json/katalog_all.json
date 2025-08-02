@@ -40,13 +40,13 @@
   "star": [
     {"id": 1, "name": "none"},
     {"id": 2, "name": "best"},
-    {"id": 3, "name": "trand"},
+    {"id": 3, "name": "trand"}
   ],
 
   "status": [
     {"id": 1, "name": "none"},
     {"id": 2, "name": "eco"},
-    {"id": 3, "name": "vegan"},
+    {"id": 3, "name": "vegan"}
   ],
 
 
