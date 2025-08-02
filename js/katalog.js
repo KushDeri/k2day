@@ -13,28 +13,30 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
+    // Создаем словари (id → имя) для быстрого доступа
+    const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
+    const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
+    const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
+    const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
+    const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
+    const starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+
+
+
+
 
     function displayProducts(products) {
-                const container = document.getElementById("products-container");
-                container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
-
-                // Создаем словари (id → имя) для быстрого доступа
-                const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
-                const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
-                const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
-                const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
-                const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
-                const starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+        const container = document.getElementById("products-container");
+        container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
 
-
-                products.forEach(product => {
-                    const submenuName = submenuMap[product.submenuId] || "Невідомо";
-                    const brandName = brandMap[product.brandId] || "Невідомо";
-                    const categoryName = categoryMap[product.categoryId] || "Невідомо";
-                    const typeSkineName = typeSkineMap[product.typeSkineId] || "Невідомо";
-                    const starName = starMap[product.starId] || "";
-                    const statusName = statusMap[product.statusId] || "";
+        products.forEach(product => {
+            const submenuName = submenuMap[product.submenuId] || "Невідомо";
+            const brandName = brandMap[product.brandId] || "Невідомо";
+            const categoryName = categoryMap[product.categoryId] || "Невідомо";
+            const typeSkineName = typeSkineMap[product.typeSkineId] || "Невідомо";
+            const starName = starMap[product.starId] || "";
+            const statusName = statusMap[product.statusId] || "";
 
 
                     //let card = document.getElementById("card");
@@ -42,29 +44,31 @@ document.addEventListener("DOMContentLoaded", function () {
                     //    card.classList.toggle("vegan");
                     //}
 
-                    const productHTML = `
-                        <div class="card">
-                            <a href="#"><img src="${product.image}" alt="${product.name}"></a>
-                            <div class="card-info" id="card">
-                                <a href="brand.html?brand=${encodeURIComponent(product.brandId)}" class="brand">${product.brandId}</a>
-                                <a href="product.html?name=${encodeURIComponent(product.name)}" class="name">${product.name}</a>
-                                <a href="coming_soon.html?category=${encodeURIComponent(product.categoryId)}" class="category">${product.categoryId}</a>
-                                <a href="product.html" class="v">${product.v} ${product.v_2}</a>
-                                <a href="product.html" class="price">${product.price} ₴</a>
-                                <!--<div>відгуки</div>-->
-                            </div>
+            const productHTML = `
+                    <div class="card">
+                        <a href="#"><img src="${product.image}" alt="${product.name}"></a>
+                        <div class="card-info" id="card">
+                            <a href="brand.html?brand=${encodeURIComponent(product.brandId)}" class="brand">${product.brandId}</a>
+                            <a href="product.html?name=${encodeURIComponent(product.name)}" class="name">${product.name}</a>
+                            <a href="coming_soon.html?category=${encodeURIComponent(product.categoryId)}" class="category">${product.categoryId}</a>
+                            <a href="product.html" class="v">${product.v} ${product.v_2}</a>
+                            <a href="product.html" class="price">${product.price} ₴</a>
+                            <!--<div>відгуки</div>-->
                         </div>
-                    `;
-                    container.insertAdjacentHTML("beforeend", productHTML); //ALL
-                });
+                    </div>
+            `;
+            container.insertAdjacentHTML("beforeend", productHTML); //ALL
+        });
     }
+
+
 
     // Функция для заполнения фильтров
     function populateFilters(products) {
         const brandFilter = document.getElementById("brand-filter");
         //const categoryFilter = document.getElementById("category-filter");
 
-        const brands = [...new Set(products.map(p => p.brand))]; // Уникальные бренды
+        const brands = [...new Set(products.map(p => p.brandId))]; // Уникальные бренды
         //const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
 
 
@@ -73,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
         brands.forEach(brand => {
             brandFilter.innerHTML += `<option value="${brandId}">${brandId}</option>`;
         });
-
         //categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
         //categories.forEach(category => {
         //    categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
         //});
+
 
         // Добавляем обработчики событий для фильтрации
         brandFilter.addEventListener("change", filterProducts);
