@@ -13,13 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
-    // Создаем словари (id → имя) для быстрого доступа
-    const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
-    const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
-    const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
-    const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
-    const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
-    const starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+    
 
 
 
@@ -28,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayProducts(productsArray) {
         const container = document.getElementById("products-container");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
+
+        // Создаем словари (id → имя) для быстрого доступа
+        const submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
+        const brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
+        const categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
+        const typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
+        const statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
+        const starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+
 
 
         productsArray.forEach(product => {
