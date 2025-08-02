@@ -12,15 +12,33 @@
 
   "category": [
     {"id": 1, "name": "face"},
-    {"id": 2, "name": "face"},
+    {"id": 2, "name": "Гідрофільна олія"},
     {"id": 3, "name": "face"},
     {"id": 4, "name": "face"},
-    {"id": 5, "name": "face"},
-    {"id": 6, "name": "face"},
+    {"id": 5, "name": "Санкрем"},
+    {"id": 6, "name": "Крем"},
     {"id": 7, "name": "face"},
     {"id": 8, "name": "face"},
     {"id": 9, "name": "face"},
-    {"id": 10, "name": "Тонер"}
+    {"id": 10, "name": "Тонер"},
+    {"id": 11, "name": "face"},
+    {"id": 12, "name": "face"},
+    {"id": 13, "name": "face"},
+    {"id": 14, "name": "face"},
+    {"id": 15, "name": "face"},
+    {"id": 16, "name": "Лосьйон"}
+  ],
+
+  "star": [
+    {"id": 1, "name": "none"},
+    {"id": 2, "name": "best"},
+    {"id": 3, "name": "trand"},
+  ],
+
+  "status": [
+    {"id": 1, "name": "none"},
+    {"id": 2, "name": "eco"},
+    {"id": 3, "name": "vegan"},
   ],
 
 
@@ -37,72 +55,81 @@
       "v": [200, 300, 500], 
       "v_2": "ml",
       "details": "details/11110500.json",
-      "star": 5
+      "starId": 2,
+      "statusId": 1
     },
     {
       "id": 11110201,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11110201.jpg",
-      "brand": "ROUND LAB",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
+      "category": 10,
       "price": 575,
       "v": 200,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Тонер",
       "details": "details/11110500.json",
-      "star": 5,
-      "status": "eco"
+      "starId": 2,
+      "statusId": 2
     },
     {
       "id": 11102200,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11102200.jpg",
-      "brand": "ROUND LAB",
       "name": "Очищуюча гідрофільна олія для обличчя 1025 Dokdo Cleansing Oil",
+      "categoryId": 2,
       "price": 852,
       "v": 200,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Гідрофільна олія",
-      "details": "details/11102200.json"
+      "details": "details/11102200.json",
+      "starId": 1,
+      "statusId": 1
     },
     {
       "id": 11116400,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11116400.jpg",
-      "brand": "ROUND LAB",
       "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
+      "categoryId": 16,
       "price": 1292,
       "v": 400,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Лосьйон",
-      "details": "details/11116400.json"
+      "details": "details/11116400.json",
+      "starId": 1,
+      "statusId": 1
     },
     {
       "id": 11205050,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11205050.jpg",
-      "brand": "ROUND LAB",
       "name": "Сонцезахисний крем для обличчя Birch Juice Sunscreen",
+      "categoryId": 5,
       "price": 850,
       "v": 50,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Санкрем",
       "details": "details/11205050.json",
-      "star": 5
+      "starId": 2,
+      "statusId": 1
     },
     {
       "id": 11206051,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11206051.jpg",
-      "brand": "ROUND LAB",
       "name": "Зволожувальний крем для обличчя Birch Juice Cream",
+      "categoryId": 6,
       "price": 700,
       "v": 50,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Крем",
       "details": "details/11206051.json",
-      "status": "eco"
+      "starId": 1,
+      "status": 2
     },
+
+    
     {
       "id": 11218019,
       "image": "images/katalog/round_lab/11218019.jpg",
