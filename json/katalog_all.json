@@ -7,7 +7,7 @@
 
   "brand": [
     {"id": 1, "name": "ROUND LAB"},
-    {"id": 2, "name": "JUNG SAEM MOOL"}
+    {"id": 5, "name": "JUNG SAEM MOOL"}
   ],
 
   "category": [
@@ -18,7 +18,7 @@
     {"id": 5, "name": "Санкрем"},
     {"id": 6, "name": "Крем"},
     {"id": 7, "name": "face"},
-    {"id": 8, "name": "face"},
+    {"id": 8, "name": "Ампула"},
     {"id": 9, "name": "face"},
     {"id": 10, "name": "Тонер"},
     {"id": 11, "name": "face"},
@@ -26,7 +26,11 @@
     {"id": 13, "name": "face"},
     {"id": 14, "name": "face"},
     {"id": 15, "name": "face"},
-    {"id": 16, "name": "Лосьйон"}
+    {"id": 16, "name": "Лосьйон"},
+    {"id": 17, "name": "face"},
+    {"id": 18, "name": "Сан-стік"},
+
+    {"id": 111, "name": "Кушон"}
   ],
 
   "star": [
@@ -126,35 +130,35 @@
       "v_2": "ml",
       "details": "details/11206051.json",
       "starId": 1,
-      "status": 2
+      "statusId": 2
     },
-
-    
     {
       "id": 11218019,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11218019.jpg",
-      "brand": "ROUND LAB",
       "name": "Сонцезахисний стік для обличчя Birch Juice Cream",
+      "categoryId": 18,
       "price": 745,
       "v": 19,
       "v_2": "g",
-      "submenu": "face",
-      "category": "Сан-стік",
-      "details": "details/11218019.json"
+      "details": "details/11218019.json",
+      "starId": 1,
+      "statusId": 1
     },
     {
       "id": 11308031,
+      "submenuId": 1,
+      "brandId": 1,
       "image": "images/katalog/round_lab/11308031.jpg",
-      "brand": "ROUND LAB",
       "name": "Заспокілива ампула для обличчя Pine Calming Cica Pad",
+      "categoryId": 8,
       "price": 590,
       "v": 30,
       "v_2": "ml",
-      "submenu": "face",
-      "category": "Ампула",
       "details": "details/11308031.json",
-      "star": "trand",
-      "status": "eco"
+      "starId": 3,
+      "statusId": 2
     },
 
 
@@ -164,17 +168,19 @@
 
     {
       "id": 25101000,
+      "submenuId": 2,
+      "brandId": 5,
       "image": "images//katalog/JungSaemMool/25101000.jpg",
-      "brand": "JUNG SAEM MOOL",
       "name": "Кушон для макияжа",
+      "categoryId": 111,
       "price": 1675,
       "v": 14,
       "v_2": "g",
-      "submenu": "makeup",
-      "category": "Кушон",
       "details": "details/25101000.json",
-      "star": 5,
-      "status": "vegan"
+      "starId": 2,
+      "statusId": 3
     }
   ]  
+
+
 }
