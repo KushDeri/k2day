@@ -33,6 +33,10 @@
     {"id": 111, "name": "Кушон"}
   ],
 
+  "typeSkine": [
+    {"id": 1, "name": "face"},
+  ],
+
   "star": [
     {"id": 1, "name": "none"},
     {"id": 2, "name": "best"},
@@ -58,6 +62,7 @@
       "price": [660, 1252, 1260],
       "v": [200, 300, 500], 
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
       "statusId": 1
@@ -72,6 +77,7 @@
       "price": 575,
       "v": 200,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
       "statusId": 2
@@ -86,6 +92,7 @@
       "price": 852,
       "v": 200,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11102200.json",
       "starId": 1,
       "statusId": 1
@@ -100,6 +107,7 @@
       "price": 1292,
       "v": 400,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11116400.json",
       "starId": 1,
       "statusId": 1
@@ -114,6 +122,7 @@
       "price": 850,
       "v": 50,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11205050.json",
       "starId": 2,
       "statusId": 1
@@ -128,6 +137,7 @@
       "price": 700,
       "v": 50,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11206051.json",
       "starId": 1,
       "statusId": 2
@@ -142,6 +152,7 @@
       "price": 745,
       "v": 19,
       "v_2": "g",
+      "typeSkineId": 1,
       "details": "details/11218019.json",
       "starId": 1,
       "statusId": 1
@@ -156,6 +167,7 @@
       "price": 590,
       "v": 30,
       "v_2": "ml",
+      "typeSkineId": 1,
       "details": "details/11308031.json",
       "starId": 3,
       "statusId": 2
@@ -176,6 +188,7 @@
       "price": 1675,
       "v": 14,
       "v_2": "g",
+      "typeSkineId": 1,
       "details": "details/25101000.json",
       "starId": 2,
       "statusId": 3
