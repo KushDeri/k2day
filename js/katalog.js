@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Функция для заполнения фильтров
-    function populateFilters(products) {
+    function populateFilters(productsArray) {
         const brandFilter = document.getElementById("brand-filter");
         //const categoryFilter = document.getElementById("category-filter");
 
