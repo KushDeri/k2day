@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
         .catch(error => console.error("Ошибка загрузки JSON:", error));
+        alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
 
