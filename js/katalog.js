@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
             populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
         }) 
-        .catch(error => console.error("Ошибка загрузки JSON:", error));
+        //.catch(error => console.error("Ошибка загрузки JSON:", error));
         alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
@@ -35,33 +35,30 @@ document.addEventListener("DOMContentLoaded", function () {
         let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, s.name]));
         let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
 
-        let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
+        //let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
 
 
-        productsArray.forEach(product => {
-            const submenuName = submenuMap[product.submenuId] || "Невідомо";
-            const brandName = brandMap[product.brandId] || "Невідомо";
-            const categoryName = categoryMap[product.categoryId] || "Невідомо";
-            const typeSkineName = typeSkineMap[product.typeSkineId] || "Невідомо";
-            const starName = starMap[product.starId] || "";
-            const statusName = statusMap[product.statusId] || "";
+        productsArray.forEach(p => {
+            //???
+            const submenuName = submenuMap[p.submenuId] || "Невідомо";
+            const brandName = brandMap[p.brandId] || "Невідомо";
+            const categoryName = categoryMap[p.categoryId] || "Невідомо";
+            const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
+            const starName = starMap[p.starId] || "";
+            const statusName = statusMap[p.statusId] || "";
 
 
-                    //let card = document.getElementById("card");
-                    //if (product.vegan > 0) {
-                    //    card.classList.toggle("vegan");
-                    //}
 
             //HTML код отображения продуктов ВСІХ
             const productHTML = `
                     <div class="card">
-                        <a href="#"><img src="${product.image}" alt="${product.name}"></a>
+                        <a href="#"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
-                            <a href="brand.html?brand=${encodeURIComponent(product.brandId)}" class="brand">${product.brandId}</a>
-                            <a href="product.html?name=${encodeURIComponent(product.name)}" class="name">${product.name}</a>
-                            <a href="coming_soon.html?category=${encodeURIComponent(product.categoryId)}" class="category">${product.categoryId}</a>
-                            <a href="product.html" class="v">${product.v} ${product.v_2}</a>
-                            <a href="product.html" class="price">${product.price} ₴</a>
+                            <a href="brand.html?brand=${encodeURIComponent(p.brandId)}" class="brand">${brandMap[p.brandId]}</a>
+                            <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
+                            <a href="coming_soon.html?category=${encodeURIComponent(p.categoryId)}" class="category">${p.categoryId}</a>
+                            <a href="product.html" class="v">${p.v} ${p.v_2}</a>
+                            <a href="product.html" class="price">${p.price} ₴</a>
                             <!--<div>відгуки</div>-->
                         </div>
                     </div>
@@ -79,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const typeSkineFilter = document.getElementById("typeSkine-filter");
         //const categoryFilter = document.getElementById("category-filter");
 
-        const brands = [...new Set(products.map(p => p.brandId))]; // Уникальные бренды
+        const brands = [...new Set(products.map(p => p.brandId))]; // Уникальные бренды???
         const typeSkines = [...new Set(products.map(p => p.typeSkineId))]; // Уникальные тип кожи
         //const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
 
