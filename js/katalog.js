@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
-            allProducts = data.products; //только массив products
-            //allProducts = Object.values(data).flat(); // Объединяем все массивы в один
+            //allProducts = data.products; //только массив products
+            allProducts = Object.values(data).flat(); // Объединяем все массивы в один
 
             displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
         let starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
 
+        let productsMap = Object.fromEntries(data.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
 
 
         productsArray.forEach(product => {
