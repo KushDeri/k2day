@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         productsArray.forEach(p => {
-            //???
+            //    
             const submenuName = submenuMap[p.submenuId] || "Невідомо";
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="card">
                         <a href="#"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
-                            <a href="brand.html?brand=${encodeURIComponent(p.brandId)}" class="brand">${brandMap[p.brandId]}</a>
+                            <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
                             <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
-                            <a href="coming_soon.html?category=${encodeURIComponent(p.categoryId)}" class="category">${p.categoryId}</a>
+                            <a href="coming_soon.html?category=${encodeURIComponent(categoryName)}" class="category">${categoryName}</a>
                             <a href="product.html" class="v">${p.v} ${p.v_2}</a>
                             <a href="product.html" class="price">${p.price} ₴</a>
                             <!--<div>відгуки</div>-->
