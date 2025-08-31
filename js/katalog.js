@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     let allProducts = []; // Сохраняем все товары для фильтрации
+    let globalData = {};
 
     fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
         .then(response => response.json()) // Преобразуем в объект
         .then(data => {
             //allProducts = data.products; //только массив products
-            allProducts = Object.values(data).flat(); // Объединяем все массивы в один
+            //allProducts = Object.values(data).flat(); // Объединяем все массивы в один
+            globalData = data;
+            allProducts = data.products;
 
-            displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
-            populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
+            displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
+            populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
         }) 
-        //.catch(error => console.error("Ошибка загрузки JSON:", error));
+        .catch(error => console.error("Ошибка загрузки JSON:", error));
         alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
@@ -20,19 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    function displayProducts(productsArray, data) {
+    function displayProducts(productsArray, globalData) {
         const container = document.getElementById("products-container");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
         // Создаем словари (id → имя) для быстрого доступа
-        let submenuMap = Object.fromEntries(data.submenu.map(a => [a.id, a.name]));
-        let brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
-        let categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
-        let typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
-        let statusMap = Object.fromEntries(data.status.map(s => [s.id, s.name]));
-        let starMap = Object.fromEntries(data.star.map(f => [f.id, f.name]));
+        let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
+        let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
+        let categoryMap = Object.fromEntries(globalData.category.map(c => [c.id, c.name]));
+        let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
+        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, s.name]));
+        let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
 
-        let productsMap = Object.fromEntries(data.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
+        let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
 
 
         productsArray.forEach(product => {
