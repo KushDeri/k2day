@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    function displayProducts(productsArray) {
+    function displayProducts(productsArray, data) {
         const container = document.getElementById("products-container");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
