@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             displayProducts(allProducts); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
             populateFilters(allProducts); // ДЕЛАЕТ ФИЛЬТР
         }) 
-        .catch(error => console.error("Ошибка загрузки JSON:", error));
+        //.catch(error => console.error("Ошибка загрузки JSON:", error));
         alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
 
         // Создаем словари (id → имя) для быстрого доступа
-        let submenuMap = Object.fromEntries(data.submenuId.map(a => [a.id, a.name]));
+        let submenuMap = Object.fromEntries(data.submenu.map(a => [a.id, a.name]));
         let brandMap = Object.fromEntries(data.brand.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(data.category.map(c => [c.id, c.name]));
         let typeSkineMap = Object.fromEntries(data.typeSkine.map(t => [t.id, t.name]));
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     //    card.classList.toggle("vegan");
                     //}
 
+            //HTML код отображения продуктов ВСІХ
             const productHTML = `
                     <div class="card">
                         <a href="#"><img src="${product.image}" alt="${product.name}"></a>
@@ -68,10 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция для заполнения фильтров
     function populateFilters(productsArray) {
+        const submenuFilter = document.getElementById("submenu-filter");
         const brandFilter = document.getElementById("brand-filter");
+        const typeSkineFilter = document.getElementById("typeSkine-filter");
         //const categoryFilter = document.getElementById("category-filter");
 
         const brands = [...new Set(products.map(p => p.brandId))]; // Уникальные бренды
+        const typeSkines = [...new Set(products.map(p => p.typeSkineId))]; // Уникальные тип кожи
         //const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
 
 
@@ -80,6 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
         brands.forEach(brand => {
             brandFilter.innerHTML += `<option value="${brandId}">${brandId}</option>`;
         });
+
+        typeSkineFilter.innerHTML = `<option value="">Всі типи</option>`;
+        typeSkines.forEach(typeSkine => {
+            typeSkineFilter.innerHTML += `<option value="${typeSkineId}">${typeSkineId}</option>`;
+        });
+
         //categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
         //categories.forEach(category => {
         //    categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
@@ -88,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Добавляем обработчики событий для фильтрации
         brandFilter.addEventListener("change", filterProducts);
+        typeSkineFilter.addEventListener("change", filterProducts);
         //categoryFilter.addEventListener("change", filterProducts);
     }
 
@@ -96,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Фильтрация товаров
     function filterProducts() {
         const selectedBrand = document.getElementById("brand-filter").value;
-        const selectedCategory = document.getElementById("category-filter").value;
+        //const selectedCategory = document.getElementById("category-filter").value;
 
         let filteredProducts = allProducts;
 

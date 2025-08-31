@@ -34,7 +34,11 @@
   ],
 
   "typeSkine": [
-    {"id": 1, "name": "face"}
+    {"id": 1, "name": "Жирна"},
+    {"id": 2, "name": "Суха"},
+    {"id": 3, "name": "Нормальна"},
+    {"id": 4, "name": "Комбінована"},
+    {"id": 5, "name": "Чутлива"}
   ],
 
   "star": [
@@ -59,8 +63,16 @@
       "image": "images/katalog/round_lab/11110500.jpg",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
       "categoryId": 10,
-      "price": [660, 1252, 1260],
-      "v": [200, 300, 500], 
+      "price": [
+        {"id":1, "p":660},
+        {"id":2, "p":1252},
+        {"id":3, "p":1260} 
+      ],
+      "volume": [
+        {"id":1, "v":200},
+        {"id":2, "v":300},
+        {"id":3, "v":500}
+      ], 
       "v_2": "ml",
       "typeSkineId": 1,
       "details": "details/11110500.json",
