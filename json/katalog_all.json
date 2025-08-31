@@ -85,7 +85,7 @@
       "brandId": 1,
       "image": "images/katalog/round_lab/11110201.jpg",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
-      "category": 10,
+      "categoryId": 10,
       "price": 575,
       "v": 200,
       "v_2": "ml",

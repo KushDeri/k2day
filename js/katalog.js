@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Функция для заполнения фильтров
-    function populateFilters(productsArray) {
+    function populateFilters(productsArray, globalData) {
         const submenuFilter = document.getElementById("submenu-filter");
         const brandFilter = document.getElementById("brand-filter");
         const typeSkineFilter = document.getElementById("typeSkine-filter");
