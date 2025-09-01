@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const starContainer = document.getElementById("star");
         const statusContainer = document.getElementById("status");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
-        starContainer.innerHTML = "";
-        statusContainer.innerHTML = "";
+        //starContainer.innerHTML = "";
+        //statusContainer.innerHTML = "";
 
 
         // Создаем словари (id → имя) для быстрого доступа
