@@ -58,13 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
             //Проверка на стар продукта
             if(p.starId == 1){
                 const starHTML = ``;
-                starContainer.insertAdjacentHTML("beforeend", productHTML);
+                starContainer.insertAdjacentHTML("beforeend", starHTML);
             };
             if (p.starId == 2 || p.starId == 3) {
                 const starHTML = `
                     <div>${starName}</div>
                 `;
-                starContainer.insertAdjacentHTML("beforeend", productHTML);
+                starContainer.insertAdjacentHTML("beforeend", starHTML);
             };
 
             //проверка на статус продукта
