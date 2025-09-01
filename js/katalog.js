@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
             allProducts = data.products;
 
             displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
-            //populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
+            populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
         }) 
-        //.catch(error => console.error("Ошибка загрузки JSON:", error));
-        alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
+        .catch(error => console.error("Ошибка загрузки JSON:", error));
+        //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
 
     
@@ -39,19 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        
-
-
         //HTML код отображения продуктов ВСІХ
         productsArray.forEach(p => {
 
-const submenuName = submenuMap[p.submenuId] || "Невідомо";
-        const brandName = brandMap[p.brandId] || "Невідомо";
-        const categoryName = categoryMap[p.categoryId] || "Невідомо";
-        const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
-        const starName = starMap[p.starId] || "";
-        const statusName = statusMap[p.statusId] || "";
-            
+            const submenuName = submenuMap[p.submenuId] || "Невідомо";
+            const brandName = brandMap[p.brandId] || "Невідомо";
+            const categoryName = categoryMap[p.categoryId] || "Невідомо";
+            const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
+            const starName = starMap[p.starId] || "";
+            const statusName = statusMap[p.statusId] || "";
+
             const productHTML = `
                     <div class="card">
                         <a href="#"><img src="${p.image}" alt="${p.name}"></a>
@@ -67,35 +64,6 @@ const submenuName = submenuMap[p.submenuId] || "Невідомо";
             `;
             container.insertAdjacentHTML("beforeend", productHTML); //ALL
         });
-
-
-
-        // Функция для заполнения фильтров
-        function populateFilters() {
-            const submenuFilter = document.getElementById("submenu-filter");
-            const brandFilter = document.getElementById("brand-filter");
-            const typeSkineFilter = document.getElementById("typeSkine-filter");
-        
-            const brands = [...new Set(brandMap)]; // Уникальные бренды
-            const typeSkines = [...new Set(typeSkineName)]; // Уникальные тип кожи
-        
-
-            brandFilter.innerHTML = `<option value="">Всі бренди</option>`;
-            brands.forEach(brand => {
-                brandFilter.innerHTML += `<option value="${brandId}">${brandId}</option>`;
-            });
-
-            typeSkineFilter.innerHTML = `<option value="">Всі типи</option>`;
-            typeSkines.forEach(typeSkine => {
-                typeSkineFilter.innerHTML += `<option value="${typeSkine}">${typeSkine}</option>`;
-            });
-
-
-
-            // Добавляем обработчики событий для фильтрации
-            brandFilter.addEventListener("change", filterProducts);
-            typeSkineFilter.addEventListener("change", filterProducts);
-        }
     }
 
 
