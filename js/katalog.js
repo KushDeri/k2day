@@ -69,23 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Функция для заполнения фильтров
     function populateFilters(productsArray, globalData) {
         const submenuFilter = document.getElementById("submenu-filter");
@@ -94,31 +77,29 @@ document.addEventListener("DOMContentLoaded", function () {
         //const categoryFilter = document.getElementById("category-filter");
 
 
+        // Создаём словари
+        let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
+        let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
 
 
+        // Уникальные значения
+        const brands = [...new Set(productsArray.map(p => p.brandId))]; // Уникальные бренды???
+        const typeSkines = [...new Set(productsArray.map(p => p.typeSkineId))]; // Уникальные тип кожи
+        //const categories = [...new Set(productsArray.map(p => p.category))]; // Уникальные категории
 
 
-        const brands = [...new Set(products.map(p => p.brandId))]; // Уникальные бренды???
-        const typeSkines = [...new Set(products.map(p => p.typeSkineId))]; // Уникальные тип кожи
-        //const categories = [...new Set(products.map(p => p.category))]; // Уникальные категории
-
-
-
+        // Фильтр
         brandFilter.innerHTML = `<option value="">Всі бренди</option>`;
-        brands.forEach(brand => {
-            brandFilter.innerHTML += `<option value="${brandId}">${brandId}</option>`;
+        brands.forEach(brandId => {
+            brandFilter.innerHTML += `<option value="${brandId}">${brandMap[brandId]}</option>`;
         });
 
         typeSkineFilter.innerHTML = `<option value="">Всі типи</option>`;
         typeSkines.forEach(typeSkine => {
-            typeSkineFilter.innerHTML += `<option value="${typeSkineId}">${typeSkineId}</option>`;
+            typeSkineFilter.innerHTML += `<option value="${typeSkineId}">${typeSkineMap[typeSkineId]}</option>`;
         });
 
-        //categoryFilter.innerHTML = `<option value="">Всі категорії</option>`;
-        //categories.forEach(category => {
-        //    categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
-        //});
-
+        
 
         // Добавляем обработчики событий для фильтрации
         brandFilter.addEventListener("change", filterProducts);
