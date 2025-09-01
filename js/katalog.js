@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div>${starName}</div>
                 `;
                 starContainer.insertAdjacentHTML("beforeend", productHTML);
-            }
+            };
 
             //проверка на статус продукта
 
