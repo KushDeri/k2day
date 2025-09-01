@@ -112,18 +112,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Фильтрация товаров
     function filterProducts() {
         const selectedBrand = document.getElementById("brand-filter").value;
+        const selectedtypeSkine = document.getElementById("typeSkine-filter").value;
         //const selectedCategory = document.getElementById("category-filter").value;
 
-        let filteredProducts = allProducts;
+        // Фильтрация
+        let filtered = allProducts.filter(p => {
+            let byBrand = selectedBrand === "" || p.brandId == selectedBrand;
+            let byType = selectedtypeSkine === "" || p.typeSkineId == selectedtypeSkine;
+            return byBrand && byType;
+        });
 
-        if (selectedBrand) {
-            filteredProducts = filteredProducts.filter(p => p.brand === selectedBrand);
-        }
-
-        if (selectedCategory) {
-            filteredProducts = filteredProducts.filter(p => p.category === selectedCategory);
-        }
-
-        displayProducts(filteredProducts);
+        // Показать только отфильтрованные
+        displayProducts(filtered, globalData);
     }
+
+
+
 });
