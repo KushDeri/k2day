@@ -43,8 +43,8 @@
 
   "star": [
     {"id": 1, "name": "none"},
-    {"id": 2, "name": "best"},
-    {"id": 3, "name": "trand"}
+    {"id": 2, "name": "BEST"},
+    {"id": 3, "name": "TRAND"}
   ],
 
   "status": [

@@ -25,7 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayProducts(productsArray, globalData) {
         const container = document.getElementById("products-container");
+        const starContainer = document.getElementById("star");
+        const statusContainer = document.getElementById("status");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
+        starContainer.innerHTML = "";
+        statusContainer.innerHTML = "";
+
 
         // Создаем словари (id → имя) для быстрого доступа
         let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
@@ -51,7 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             //Проверка на стар продукта
-
+            if(p.starId == 1){
+                const starHTML = ``;
+                starContainer.insertAdjacentHTML("beforeend", productHTML);
+            };
+            if (p.starId == 2 || p.starId == 3) {
+                const starHTML = `
+                    <div>${starName}</div>
+                `;
+                starContainer.insertAdjacentHTML("beforeend", productHTML);
+            }
 
             //проверка на статус продукта
 
