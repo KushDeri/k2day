@@ -49,9 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
             const starName = starMap[p.starId] || "";
             const statusName = statusMap[p.statusId] || "";
 
+
+            //Проверка на стар продукта
+
+
+            //проверка на статус продукта
+
+
+            //отображение продуктов
             const productHTML = `
                     <div class="card">
-                        <a href="#"><img src="${p.image}" alt="${p.name}"></a>
+                        <div class="star" id="star"></div>
+                        <div class="status" id="status"></div>
+                        <a href="product.html?name=${encodeURIComponent(p.name)}"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
                             <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
@@ -96,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         typeSkineFilter.innerHTML = `<option value="">Всі типи</option>`;
         typeSkines.forEach(typeSkine => {
-            typeSkineFilter.innerHTML += `<option value="${typeSkineId}">${typeSkineMap[typeSkineId]}</option>`;
+            //typeSkineFilter.innerHTML += `<option value="${typeSkineId}">${typeSkineMap[typeSkineId]}</option>`;
         });
 
         
