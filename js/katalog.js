@@ -39,16 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        const submenuName = submenuMap[p.submenuId] || "Невідомо";
+        
+
+
+        //HTML код отображения продуктов ВСІХ
+        productsArray.forEach(p => {
+
+const submenuName = submenuMap[p.submenuId] || "Невідомо";
         const brandName = brandMap[p.brandId] || "Невідомо";
         const categoryName = categoryMap[p.categoryId] || "Невідомо";
         const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
         const starName = starMap[p.starId] || "";
         const statusName = statusMap[p.statusId] || "";
-
-
-        //HTML код отображения продуктов ВСІХ
-        productsArray.forEach(p => {
+            
             const productHTML = `
                     <div class="card">
                         <a href="#"><img src="${p.image}" alt="${p.name}"></a>
