@@ -8,6 +8,7 @@
     flex: 1;
     border-right: 1.5px solid #3d3a36;
     margin: 0 0 0 50px;
+    padding-right: 15px;
     font-size: 18px;
 }
 .filter h1 {
