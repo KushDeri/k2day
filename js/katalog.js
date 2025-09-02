@@ -53,20 +53,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Проверка на стар продукта
             let starHTML = "";
-            //if(p.starId == 1){
-            //    const starHTML = ``;
-            //};
-            if (p.starId == 2 || p.starId == 3) {
-                starHTML = `<div class="star">${starName}</div>`;
+            let starCSS = document.querySelectorAll(".star");
+            if(p.starId == 1){
+                star.style.display = "none";
+            };
+            if (p.starId == 2) {
+                star.style.display = "flex";
+                 star.style.background = "red";
+            };
+            if (p.starId == 3) {
+                star.style.display = "flex";
+                star.style.background = "green";
             };
 
             //проверка на статус продукта
+            let statusHTML = "";
+            if (p.statusId) {
+                statusHTML = `<div class="status">${statusName}</div>`;
+            }
 
 
             //отображение продуктов
             const productHTML = `
                     <div class="card">
-                        ${starHTML}
+                        <div class="star">${starName}</div>
                         ${statusHTML}
                         <a href="product.html?name=${encodeURIComponent(p.name)}"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
