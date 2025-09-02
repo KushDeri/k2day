@@ -55,17 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
             let starHTML = "";
             let starCSS = document.querySelectorAll(".star");
             if (p.starId == 2) {
-                star.style.display = "flex";
-                star.style.position = "";
-                star.style.background = "red";
+                starCSS.style.display = "flex";
+                starCSS.style.position = "";
+                starCSS.style.background = "red";
             }
             else if (p.starId == 3) {
-                star.style.display = "flex";
-                star.style.position = "";
-                star.style.background = "green";
+                starCSS.style.display = "flex";
+                starCSS.style.position = "";
+                starCSS.style.background = "green";
             }
             else {
-                star.style.display = "none";
+                starCSS.style.display = "none";
             }
 
             //проверка на статус продукта
