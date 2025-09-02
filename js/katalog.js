@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 star.style.position = "";
                 star.style.background = "red";
             };
-            if (p.starId == 3) {
+            else if (p.starId == 3) {
                 star.style.display = "flex";
                 star.style.position = "";
                 star.style.background = "green";
             };
-            if else {
+            else {
                 star.style.display = "none";
             }
 
