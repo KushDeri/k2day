@@ -25,11 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayProducts(productsArray, globalData) {
         const container = document.getElementById("products-container");
-        const starContainer = document.getElementById("star");
-        const statusContainer = document.getElementById("status");
         container.innerHTML = ""; // Очищаем контейнер перед добавлением новых элементов
-        starContainer.innerHTML = "";
-        //statusContainer.innerHTML = "";
 
 
         // Создаем словари (id → имя) для быстрого доступа
@@ -56,15 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             //Проверка на стар продукта
-            if(p.starId == 1){
-                const starHTML = ``;
-                starContainer.insertAdjacentHTML("beforeend", starHTML);
-            };
+            let starHTML = "";
+            //if(p.starId == 1){
+            //    const starHTML = ``;
+            //};
             if (p.starId == 2 || p.starId == 3) {
-                const starHTML = `
-                    <div>${starName}</div>
-                `;
-                starContainer.insertAdjacentHTML("beforeend", starHTML);
+                starHTML = `<div class="star">${starName}</div>`;
             };
 
             //проверка на статус продукта
@@ -73,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             //отображение продуктов
             const productHTML = `
                     <div class="card">
-                        <div class="star" id="star"></div>
-                        <div class="status" id="status"></div>
+                        ${starHTML}
+                        ${statusHTML}
                         <a href="product.html?name=${encodeURIComponent(p.name)}"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
