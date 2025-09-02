@@ -49,8 +49,8 @@
 
   "status": [
     {"id": 1, "name": "none"},
-    {"id": 2, "name": "eco"},
-    {"id": 3, "name": "vegan"}
+    {"id": 2, "name": "eco", "image": "images/katalog/round_lab/11110500.jpg"},
+    {"id": 3, "name": "vegan", "image": "images/katalog/round_lab/11110500.jpg"}
   ],
 
 

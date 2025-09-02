@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.category.map(c => [c.id, c.name]));
         let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
-        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, s.name]));
+        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, s.name, s.image]));
         let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
 
         //let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
@@ -64,15 +64,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 star.style.position = "";
                 star.style.background = "green";
             };
-            else {
+            if else {
                 star.style.display = "none";
             }
 
             //проверка на статус продукта
             let statusHTML = "";
-            if (p.statusId) {
-                statusHTML = `<div class="status">${statusName}</div>`;
+            if (p.statusId == 2 || p.statusId == 3) {
+                statusHTML = `<img class="status" src="${statusMap.image}">`;
             }
+            else {
+                statusHTML = ``;
+            }
+
+
 
 
             //отображение продуктов
