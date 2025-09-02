@@ -54,17 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
             //Проверка на стар продукта
             let starHTML = "";
             let starCSS = document.querySelectorAll(".star");
-            if(p.starId == 1){
-                star.style.display = "none";
-            };
             if (p.starId == 2) {
                 star.style.display = "flex";
-                 star.style.background = "red";
+                star.style.position = "";
+                star.style.background = "red";
             };
             if (p.starId == 3) {
                 star.style.display = "flex";
+                star.style.position = "";
                 star.style.background = "green";
             };
+            else {
+                star.style.display = "none";
+            }
 
             //проверка на статус продукта
             let statusHTML = "";
