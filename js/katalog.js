@@ -33,10 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.category.map(c => [c.id, c.name]));
         let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
-        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, s.name, s.image]));
+        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
         let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
 
         //let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
+
 
 
 
@@ -48,30 +49,28 @@ document.addEventListener("DOMContentLoaded", function () {
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
             const starName = starMap[p.starId] || "";
-            const statusName = statusMap[p.statusId] || "";
+            const statusData = statusMap[p.statusId] || null;
 
 
             //Проверка на стар продукта
-            let starHTML = "";
-            let starCSS = document.querySelectorAll(".star");
+            let starStyle = "";
+            //let starCSS = document.querySelectorAll(".star");
             if (p.starId == 2) {
-                starCSS.style.display = "flex";
-                starCSS.style.position = "";
-                starCSS.style.background = "red";
+                starStyle = `style="display:flex; background:red;"`;
+                //starStyle.style.position = "";
             }
             else if (p.starId == 3) {
-                starCSS.style.display = "flex";
-                starCSS.style.position = "";
-                starCSS.style.background = "green";
+                starStyle = `style="display:flex; background:green;"`;
+                starStyle.style.position = "";
             }
             else {
-                starCSS.style.display = "none";
+                starStyle = `style="display:none;"`;
             }
 
-            //проверка на статус продукта
+            //Проверка на статус продукта
             let statusHTML = "";
-            if (p.statusId == 2 || p.statusId == 3) {
-                statusHTML = `<img class="status" src="${statusMap.image}">`;
+            if (statusData) {
+                statusHTML = `<img class="status" src="${statusData.image}">`;
             }
             else {
                 statusHTML = ``;
@@ -83,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //отображение продуктов
             const productHTML = `
                     <div class="card">
-                        <div class="star">${starName}</div>
+                        <div class="star" ${starStyle}>${starName}</div>
                         ${statusHTML}
                         <a href="product.html?name=${encodeURIComponent(p.name)}"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
