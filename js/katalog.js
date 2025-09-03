@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //starStyle.style.position = "";
             }
             else if (p.starId == 3) {
-                starStyle = `style="display:flex; background:green; position: absolute; padding: 4px 10px; color: #fff;"`;
+                starStyle = `style="display:flex; background:green; position: absolute; padding: 4px 12px; color: #fff; border-radius: 15px 0 0px;"`;
                 //starStyle.style.position = "";
             }
             else {
