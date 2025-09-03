@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const productHTML = `
                     <div class="card">
                         <div class="star" ${starStyle}>${starName}</div>
-                        ${statusHTML}
+                        <!--${statusHTML}-->
                         <a href="product.html?name=${encodeURIComponent(p.name)}"><img src="${p.image}" alt="${p.name}"></a>
                         <div class="card-info" id="card">
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
