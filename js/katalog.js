@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let starStyle = "";
             //let starCSS = document.querySelectorAll(".star");
             if (p.starId == 2) {
-                starStyle = `style="display:flex; background:red; position: absolute; padding: 4px 10px; color: #fff; border-radius: 25px 0 0 0;"`;
+                starStyle = `style="display:flex; background:red; position: absolute; padding: 4px 12px; color: #fff; border-radius: 15px 0 0px;"`;
                 //starStyle.style.position = "";
             }
             else if (p.starId == 3) {
