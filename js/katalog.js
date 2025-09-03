@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let starStyle = "";
             //let starCSS = document.querySelectorAll(".star");
             if (p.starId == 2) {
-                starStyle = `style="display:flex; background:red; position: absolute; padding: 4px 10px; color: #fff;"`;
+                starStyle = `style="display:flex; background:red; position: absolute; padding: 4px 10px; color: #fff; border-radius: 25px 0 0 0;"`;
                 //starStyle.style.position = "";
             }
             else if (p.starId == 3) {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Проверка на статус продукта
             let statusHTML = "";
-            if (statusData) {
+            if (statusData == 2 || statusData == 3) {
                 statusHTML = `<img class="status" src="${statusData.image}">`;
             }
             else {
