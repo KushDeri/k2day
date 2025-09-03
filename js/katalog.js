@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
             let starStyle = "";
             //let starCSS = document.querySelectorAll(".star");
             if (p.starId == 2) {
-                starStyle = `style="display:flex; background:red;"`;
+                starStyle = `style="display:flex; background:red; position: absolute; padding: 4px 10px; color: #fff;"`;
                 //starStyle.style.position = "";
             }
             else if (p.starId == 3) {
-                starStyle = `style="display:flex; background:green;"`;
+                starStyle = `style="display:flex; background:green; position: absolute; padding: 4px 10px; color: #fff;"`;
                 //starStyle.style.position = "";
             }
             else {
