@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             else if (p.starId == 3) {
                 starStyle = `style="display:flex; background:green;"`;
-                starStyle.style.position = "";
+                //starStyle.style.position = "";
             }
             else {
                 starStyle = `style="display:none;"`;
