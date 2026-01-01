@@ -53,6 +53,11 @@
     {"id": 3, "name": "vegan", "image": "images/katalog/round_lab/11110500.jpg"}
   ],
 
+  "stock": [
+    {"id": 1, "name": "none"},
+    {"id": 2, "name": "eco"},
+    {"id": 3, "name": "vegan"}
+  ],
 
 
   "products": [

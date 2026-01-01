@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("menu-placeholder").innerHTML = data;
-            setupMenu(); // Функция для корректной работы выпадающего меню
+            //setupMenu(); // Функция для корректной работы выпадающего меню
 
 
             let logo = document.querySelector(".logo a img");
@@ -132,6 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         })
-        //.catch(error => console.error("Ошибка загрузки меню:", error));
+        .catch(error => console.error("Ошибка загрузки меню:", error));
 });
 
