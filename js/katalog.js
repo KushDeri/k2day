@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let typeSkineMap = Object.fromEntries(globalData.skineType.map(t => [t.id, t.name]));
         //let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
         let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
-        let stockMap = Object.fromEntries(globalData.star.map(k => [k.id, k.name]));
+        let stockMap = Object.fromEntries(globalData.stock.map(k => [k.id, k.name]));
 
 
 
