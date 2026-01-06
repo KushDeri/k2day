@@ -1,4 +1,4 @@
-{
+
   "submenu": [
     {"id": 1, "name": "face"},
     {"id": 2, "name": "makeup"},
@@ -29,4 +29,4 @@
     {"id": 1, "name": "none"},
     {"id": 2, "name": "предзаказ"}
   ]
-}
+
