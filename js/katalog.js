@@ -43,13 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Создаем словари (id → имя) для быстрого доступа
-        let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
+        //let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
         let brandMap = Object.fromEntries(globalData.brands.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.categories.map(c => [c.id, c.name]));
-        let typeSkineMap = Object.fromEntries(globalData.skineType.map(t => [t.id, t.name]));
+        //let typeSkineMap = Object.fromEntries(globalData.skineType.map(t => [t.id, t.name]));
         //let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
-        let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
-        let stockMap = Object.fromEntries(globalData.stock.map(k => [k.id, k.name]));
+        //let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
+        //let stockMap = Object.fromEntries(globalData.stock.map(k => [k.id, k.name]));
 
 
 
