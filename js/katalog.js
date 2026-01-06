@@ -60,8 +60,19 @@ document.addEventListener("DOMContentLoaded", function () {
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
+            //const statusData = statusMap[p.statusId] || null;
             const starName = starMap[p.starId] || "";
-            const statusData = statusMap[p.statusId] || null;
+            //const stockData = stockMap[p.stockId] || null;
+
+
+            //Проверка на статус продукта
+            //let statusHTML = "";
+            //if (statusData == 2 || statusData == 3) {
+            //    statusHTML = `<img class="status" src="${statusData.image}">`;
+            //}
+            //else {
+            //    statusHTML = ``;
+            //}
 
 
             //Проверка на стар продукта
@@ -77,14 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 starStyle = `style="display:none;"`;
             }
 
-            //Проверка на статус продукта
-            let statusHTML = "";
-            if (statusData == 2 || statusData == 3) {
-                statusHTML = `<img class="status" src="${statusData.image}">`;
-            }
-            else {
-                statusHTML = ``;
-            }
+            
 
 
 
