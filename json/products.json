@@ -6,17 +6,26 @@
       "image": "images/katalog/round_lab/11110500.jpg",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
       "categoryId": 10,
-      "price": [
-        {"id":1, "r":660},
-        {"id":2, "r":1252},
-        {"id":3, "r":1260} 
+      "variants": [
+        {
+          "id": 1,
+          "volume": 200,
+          "unit": "ml",
+          "price": 660
+        },
+        {
+          "id": 2,
+          "volume": 300,
+          "unit": "ml",
+          "price": 1252
+        },
+        {
+          "id": 3,
+          "volume": 500,
+          "unit": "ml",
+          "price": 1260
+        }
       ],
-      "volume": [
-        {"id":1, "v":200},
-        {"id":2, "v":300},
-        {"id":3, "v":500}
-      ], 
-      "v_2": "ml",
       "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
@@ -30,9 +39,14 @@
       "image": "images/katalog/round_lab/11110201.jpg",
       "name": "Зволожувальний тонер для обличчя 1025 Dokdo Toner",
       "categoryId": 10,
-      "price": 575,
-      "v": 200,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 200,
+          "unit": "ml",
+          "price": 575
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
@@ -45,9 +59,14 @@
       "image": "images/katalog/round_lab/11102200.jpg",
       "name": "Очищуюча гідрофільна олія для обличчя 1025 Dokdo Cleansing Oil",
       "categoryId": 2,
-      "price": 852,
-      "v": 200,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 200,
+          "unit": "ml",
+          "price": 852
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11102200.json",
       "starId": 1,
@@ -60,9 +79,14 @@
       "image": "images/katalog/round_lab/11116400.jpg",
       "name": "Зволожувальний лосьйон для обличчя 1025 Dokdo Lotion",
       "categoryId": 16,
-      "price": 1292,
-      "v": 400,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 400,
+          "unit": "ml",
+          "price": 1292
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11116400.json",
       "starId": 1,
@@ -75,9 +99,14 @@
       "image": "images/katalog/round_lab/11205050.jpg",
       "name": "Сонцезахисний крем для обличчя Birch Juice Sunscreen",
       "categoryId": 5,
-      "price": 850,
-      "v": 50,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 50,
+          "unit": "ml",
+          "price": 850
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11205050.json",
       "starId": 2,
@@ -90,9 +119,14 @@
       "image": "images/katalog/round_lab/11206051.jpg",
       "name": "Зволожувальний крем для обличчя Birch Juice Cream",
       "categoryId": 6,
-      "price": 700,
-      "v": 50,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 50,
+          "unit": "ml",
+          "price": 700
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11206051.json",
       "starId": 1,
@@ -105,9 +139,14 @@
       "image": "images/katalog/round_lab/11218019.jpg",
       "name": "Сонцезахисний стік для обличчя Birch Juice Cream",
       "categoryId": 18,
-      "price": 745,
-      "v": 19,
-      "v_2": "g",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 19,
+          "unit": "g",
+          "price": 745
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11218019.json",
       "starId": 1,
@@ -120,9 +159,14 @@
       "image": "images/katalog/round_lab/11308031.jpg",
       "name": "Заспокілива ампула для обличчя Pine Calming Cica Pad",
       "categoryId": 8,
-      "price": 590,
-      "v": 30,
-      "v_2": "ml",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 30,
+          "unit": "ml",
+          "price": 590
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/11308031.json",
       "starId": 3,
@@ -141,9 +185,14 @@
       "image": "images//katalog/JungSaemMool/25101000.jpg",
       "name": "Кушон для макияжа",
       "categoryId": 111,
-      "price": 1675,
-      "v": 14,
-      "v_2": "g",
+      "variants": [
+        {
+          "id": 1,
+          "volume": 14,
+          "unit": "g",
+          "price": 1675
+        }
+      ],
       "typeSkineId": 1,
       "details": "details/25101000.json",
       "starId": 2,
