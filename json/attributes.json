@@ -1,11 +1,11 @@
-[{
+{
   "submenu": [
     {"id": 1, "name": "face"},
     {"id": 2, "name": "makeup"},
     {"id": 3, "name": "haire"}
   ],
 
-  "skineType": [
+  "skineTypes": [
     {"id": 1, "name": "Жирна"},
     {"id": 2, "name": "Суха"},
     {"id": 3, "name": "Нормальна"},
@@ -29,4 +29,4 @@
     {"id": 1, "name": "none"},
     {"id": 2, "name": "предзаказ"}
   ]
-}]
+}
