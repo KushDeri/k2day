@@ -1,0 +1,24 @@
+{
+  "category": [
+    {"id": 1, "name": "face"},
+    {"id": 2, "name": "Гідрофільна олія"},
+    {"id": 3, "name": "face"},
+    {"id": 4, "name": "face"},
+    {"id": 5, "name": "Санкрем"},
+    {"id": 6, "name": "Крем"},
+    {"id": 7, "name": "face"},
+    {"id": 8, "name": "Ампула"},
+    {"id": 9, "name": "face"},
+    {"id": 10, "name": "Тонер"},
+    {"id": 11, "name": "face"},
+    {"id": 12, "name": "face"},
+    {"id": 13, "name": "face"},
+    {"id": 14, "name": "face"},
+    {"id": 15, "name": "face"},
+    {"id": 16, "name": "Лосьйон"},
+    {"id": 17, "name": "face"},
+    {"id": 18, "name": "Сан-стік"},
+
+    {"id": 111, "name": "Кушон"}
+  ]
+}

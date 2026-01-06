@@ -2,11 +2,30 @@ document.addEventListener("DOMContentLoaded", function () {
     let allProducts = []; // Сохраняем все товары для фильтрации
     let globalData = {};
 
-    fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
-        .then(response => response.json()) // Преобразуем в объект
-        .then(data => {
+    //fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
+    //    .then(response => response.json()) // Преобразуем в объект
+    //    .then(data => {
             //allProducts = data.products; //только массив products
             //allProducts = Object.values(data).flat(); // Объединяем все массивы в один
+    //        globalData = data;
+    //        allProducts = data.products;
+
+    //        displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
+    //        populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
+    //    }) 
+    //    .catch(error => console.error("Ошибка загрузки JSON:", error));
+        //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
+
+    Promise.all([
+        fetch('/json/meta.json').then(r => r.json()),
+        fetch('/json/brands.json').then(r => r.json()),
+        fetch('/json/categories.json').then(r => r.json()),
+        fetch('/json/products.json').then(r => r.json())
+    ])
+    .then(([meta, brands, categories, products]) => {
+        render(products, { meta, brands, categories });
+    });
+    .then(data => {
             globalData = data;
             allProducts = data.products;
 
@@ -14,9 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
         }) 
         .catch(error => console.error("Ошибка загрузки JSON:", error));
-        //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
-
-
     
 
 
