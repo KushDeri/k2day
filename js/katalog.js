@@ -5,11 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     //fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
     //    .then(response => response.json()) // Преобразуем в объект
     //    .then(data => {
-            //allProducts = data.products; //только массив products
-            //allProducts = Object.values(data).flat(); // Объединяем все массивы в один
     //        globalData = data;
     //        allProducts = data.products;
-
     //        displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
     //        populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
     //    }) 
@@ -115,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
     // Функция для заполнения фильтров
     function populateFilters(productsArray, globalData) {
         const submenuFilter = document.getElementById("submenu-filter");
@@ -152,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
         typeSkineFilter.addEventListener("change", filterProducts);
         //categoryFilter.addEventListener("change", filterProducts);
     }
-
 
 
     // Фильтрация товаров
