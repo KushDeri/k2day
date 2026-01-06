@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch('https://kushderi.github.io/k2day/json/products.json').then(r => r.json())
     ])
     .then(([meta, brands, categories, products]) => {
-        render(products, { meta, brands, categories });
-    });
-    .then(data => {
-            globalData = data;
-            allProducts = data.products;
+        
+        globalData = { meta, brands, categories };
+        allProducts = products;
 
-            displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
-            populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
-        }) 
-        .catch(error => console.error("Ошибка загрузки JSON:", error));
-    
+        displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
+        populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
+    }) 
+    .catch(error => {
+        console.error("Ошибка загрузки JSON:", error);
+        alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
+    });
 
 
 
