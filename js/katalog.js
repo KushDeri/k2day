@@ -20,14 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch('https://kushderi.github.io/k2day/json/meta.json').then(r => r.json()),
         fetch('https://kushderi.github.io/k2day/json/brands.json').then(r => r.json()),
         fetch('https://kushderi.github.io/k2day/json/categories.json').then(r => r.json()),
+        fetch('https://kushderi.github.io/k2day/json/attributes.json').then(r => r.json()),
         fetch('https://kushderi.github.io/k2day/json/products.json').then(r => r.json())
     ])
-    .then(([meta, brands, categories, products]) => {
+    .then(([meta, brands, categories, attributes, products]) => {
         
-        globalData = { meta, brands, categories };
+        globalData = { meta, brands, categories, attributes };
         allProducts = products;
 
-        displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
+        displayProducts(allProducts, globalData); // ОТОБРАЖЕНИЕ ЗДЕСЬ   
         populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
     }) 
     .catch(error => {
@@ -48,12 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
         let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.category.map(c => [c.id, c.name]));
-        let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
-        let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
+        let typeSkineMap = Object.fromEntries(globalData.skineType.map(t => [t.id, t.name]));
+        //let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
         let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
-
-        //let productsMap = Object.fromEntries(globalData.products.map(p => [p.id, p.submenuId, p.brandId, p.image, p.name, p.categoryId, p.price, p.volume, p.v_2, p.typeSkineId, p.details, p.starId, p.statusId]));
-
+        let stockMap = Object.fromEntries(globalData.star.map(k => [k.id, k.name]));
 
 
 
