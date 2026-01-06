@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
     Promise.all([
-        fetch('https://kushderi.github.io/k2day/json/meta.json').then(r => r.json()),
-        fetch('https://kushderi.github.io/k2day/json/brands.json').then(r => r.json()),
-        fetch('https://kushderi.github.io/k2day/json/categories.json').then(r => r.json()),
+        fetch('../k2day/json/meta.json').then(r => r.json()),
+        fetch('../k2day/json/brands.json').then(r => r.json()),
+        fetch('../k2day/json/categories.json').then(r => r.json()),
         fetch('../k2day/json/attributes.json').then(r => r.json()),
-        fetch('https://kushderi.github.io/k2day/json/products.json').then(r => r.json())
+        fetch('../k2day/json/products.json').then(r => r.json())
     ])
     .then(([meta, brands, categories, attributes, products]) => {
         
@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
         //let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
         let brandMap = Object.fromEntries(globalData.brands.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.categories.map(c => [c.id, c.name]));
-        //let typeSkineMap = Object.fromEntries(globalData.skineType.map(t => [t.id, t.name]));
+        let typeSkineMap = Object.fromEntries(globalData.skineTypes.map(t => [t.id, t.name]));
         //let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
-        //let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
+        let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
         //let stockMap = Object.fromEntries(globalData.stock.map(k => [k.id, k.name]));
 
 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //HTML код отображения продуктов ВСІХ
         productsArray.forEach(p => {
 
-            const submenuName = submenuMap[p.submenuId] || "Невідомо";
+            //const submenuName = submenuMap[p.submenuId] || "Невідомо";
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
