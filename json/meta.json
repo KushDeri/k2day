@@ -1,6 +1,4 @@
 {
-  "meta": {
-    "currency": "UAH",
-    "language": "uk"
-  }  
+  "currency": "UAH",
+  "language": "uk"
 }

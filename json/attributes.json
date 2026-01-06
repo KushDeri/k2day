@@ -5,7 +5,7 @@
     {"id": 3, "name": "haire"}
   ],
 
-  "typeSkine": [
+  "skineType": [
     {"id": 1, "name": "Жирна"},
     {"id": 2, "name": "Суха"},
     {"id": 3, "name": "Нормальна"},

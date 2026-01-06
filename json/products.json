@@ -1,5 +1,4 @@
-{
-  "products": [
+[
     {
       "id": 11110500,
       "submenuId": 1,
@@ -150,7 +149,4 @@
       "starId": 2,
       "statusId": 3
     }
-  ]  
-
-
-}
+]  
