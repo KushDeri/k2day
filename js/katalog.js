@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
         //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
 
     Promise.all([
-        fetch('.../json/meta.json').then(r => r.json()),
-        fetch('.../json/brands.json').then(r => r.json()),
-        fetch('.../json/categories.json').then(r => r.json()),
-        fetch('.../json/products.json').then(r => r.json())
+        fetch('https://kushderi.github.io/k2day/json/meta.json').then(r => r.json()),
+        fetch('https://kushderi.github.io/k2day/json/brands.json').then(r => r.json()),
+        fetch('https://kushderi.github.io/k2day/json/categories.json').then(r => r.json()),
+        fetch('https://kushderi.github.io/k2day/json/products.json').then(r => r.json())
     ])
     .then(([meta, brands, categories, products]) => {
         render(products, { meta, brands, categories });
