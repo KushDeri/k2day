@@ -8,24 +8,19 @@
       "categoryId": 10,
       "variants": [
         {
-          "id": 1,
           "volume": 200,
-          "unit": "ml",
           "price": 660
         },
         {
-          "id": 2,
           "volume": 300,
-          "unit": "ml",
           "price": 1252
         },
         {
-          "id": 3,
           "volume": 500,
-          "unit": "ml",
           "price": 1260
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
@@ -41,17 +36,17 @@
       "categoryId": 10,
       "variants": [
         {
-          "id": 1,
           "volume": 200,
-          "unit": "ml",
           "price": 575
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11110500.json",
       "starId": 2,
       "statusId": 2
     },
+
     {
       "id": 11102200,
       "submenuId": 1,
@@ -61,17 +56,17 @@
       "categoryId": 2,
       "variants": [
         {
-          "id": 1,
           "volume": 200,
-          "unit": "ml",
           "price": 852
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11102200.json",
       "starId": 1,
       "statusId": 1
     },
+
     {
       "id": 11116400,
       "submenuId": 1,
@@ -81,17 +76,17 @@
       "categoryId": 16,
       "variants": [
         {
-          "id": 1,
           "volume": 400,
-          "unit": "ml",
           "price": 1292
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11116400.json",
       "starId": 1,
       "statusId": 1
     },
+
     {
       "id": 11205050,
       "submenuId": 1,
@@ -101,17 +96,17 @@
       "categoryId": 5,
       "variants": [
         {
-          "id": 1,
           "volume": 50,
-          "unit": "ml",
           "price": 850
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11205050.json",
       "starId": 2,
       "statusId": 1
     },
+
     {
       "id": 11206051,
       "submenuId": 1,
@@ -121,17 +116,17 @@
       "categoryId": 6,
       "variants": [
         {
-          "id": 1,
           "volume": 50,
-          "unit": "ml",
           "price": 700
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11206051.json",
       "starId": 1,
       "statusId": 2
     },
+
     {
       "id": 11218019,
       "submenuId": 1,
@@ -141,17 +136,17 @@
       "categoryId": 18,
       "variants": [
         {
-          "id": 1,
           "volume": 19,
-          "unit": "g",
           "price": 745
         }
       ],
+      "unit": "g",
       "typeSkineId": 1,
       "details": "details/11218019.json",
       "starId": 1,
       "statusId": 1
     },
+
     {
       "id": 11308031,
       "submenuId": 1,
@@ -161,12 +156,11 @@
       "categoryId": 8,
       "variants": [
         {
-          "id": 1,
           "volume": 30,
-          "unit": "ml",
           "price": 590
         }
       ],
+      "unit": "ml",
       "typeSkineId": 1,
       "details": "details/11308031.json",
       "starId": 3,
@@ -187,12 +181,11 @@
       "categoryId": 111,
       "variants": [
         {
-          "id": 1,
           "volume": 14,
-          "unit": "g",
           "price": 1675
         }
       ],
+      "unit": "g",
       "typeSkineId": 1,
       "details": "details/25101000.json",
       "starId": 2,

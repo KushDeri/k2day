@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //HTML код отображения продуктов ВСІХ
         productsArray.forEach(p => {
 
-            let variantsMap = Object.fromEntries(p.variants.map(v => [v.id, v]));
+            let variantsMap = Object.fromEntries(p.variants.map(v => [v.volume, v.price]));
 
             const submenuName = submenuMap[p.submenuId] || "Невідомо";
             const brandName = brandMap[p.brandId] || "Невідомо";
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
                             <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
                             <a href="coming_soon.html?category=${encodeURIComponent(categoryName)}" class="category">${categoryName}</a>
-                            <a href="product.html" class="variants">${p.variants[0].volume} ${p.variants[0].unit}</a>
+                            <a href="product.html" class="variants">${p.variants[0].volume} ${p.unit}</a>
                             <a href="product.html" class="price">${p.variants[0].price} ₴</a>
                             <!--<div>відгуки</div>-->
                         </div>
