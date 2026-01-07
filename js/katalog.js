@@ -55,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             //Проверка на статус продукта
-            //let statusHTML = "";
-            //if (statusData == 2 || statusData == 3) {
-            //    statusHTML = `<img class="status" src="${statusData.image}">`;
-            //}
-            //else {
-            //    statusHTML = ``;
-            //}
+            let statusHTML = "";
+            if (statusData == 2 || statusData == 3) {
+                statusHTML = `<img class="status" src="${statusData.image}">`;
+            }
+            else {
+                statusHTML = ``;
+            }
 
 
             //Проверка на стар продукта
