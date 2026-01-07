@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let brandMap = Object.fromEntries(globalData.brands.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.categories.map(c => [c.id, c.name]));
         let typeSkineMap = Object.fromEntries(globalData.attributes.typeSkine.map(t => [t.id, t.name]));
-        //let statusMap = Object.fromEntries(globalData.attributes.status.map(s => [s.id, { name: s.name, image: s.image }]));
+        let statusMap = Object.fromEntries(globalData.attributes.status.map(s => [s.id, { name: s.name, image: s.image }]));
         let starMap = Object.fromEntries(globalData.attributes.star.map(f => [f.id, f.name]));
         //let stockMap = Object.fromEntries(globalData.attributes.stock.map(k => [k.id, k.name]));
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
-            //const statusData = statusMap[p.statusId] || null;
+            const statusData = statusMap[p.statusId] || null;
             const starName = starMap[p.starId] || "";
             //const stockData = stockMap[p.stockId] || null;
 
