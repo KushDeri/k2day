@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Создаём словари
-        let brandMap = Object.fromEntries(globalData.brand.map(b => [b.id, b.name]));
+        let brandMap = Object.fromEntries(globalData.brands.map(b => [b.id, b.name]));
         let typeSkineMap = Object.fromEntries(globalData.attributes.typeSkine.map(t => [t.id, t.name]));
 
 
