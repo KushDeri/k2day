@@ -45,9 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
         //HTML код отображения продуктов ВСІХ
         productsArray.forEach(p => {
 
+            let variantsMap = Object.fromEntries(p.variants.map(v => [v.id, v.volume, v.unit, v.price]));
+
             const submenuName = submenuMap[p.submenuId] || "Невідомо";
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
+            //const variantsName = variantsMap[p.volume] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
             const statusData = statusMap[p.statusId] || null;
             const starName = starMap[p.starId] || "";
@@ -92,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
                             <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
                             <a href="coming_soon.html?category=${encodeURIComponent(categoryName)}" class="category">${categoryName}</a>
-                            <a href="product.html" class="v">${p.variants.volume} ${p.variants.unit}</a>
-                            <a href="product.html" class="price">${p.variants.price} ₴</a>
+                            <a href="product.html" class="variants">${variantsMap.volume} ${variantsMap.unit}</a>
+                            <a href="product.html" class="price">${variantsMap.price} ₴</a>
                             <!--<div>відгуки</div>-->
                         </div>
                     </div>
