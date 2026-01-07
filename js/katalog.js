@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <a href="brand.html?brand=${encodeURIComponent(brandName)}" class="brand">${brandName}</a>
                             <a href="product.html?name=${encodeURIComponent(p.name)}" class="name">${p.name}</a>
                             <a href="coming_soon.html?category=${encodeURIComponent(categoryName)}" class="category">${categoryName}</a>
-                            <a href="product.html" class="v">${p.v} ${p.v_2}</a>
-                            <a href="product.html" class="price">${p.price} ₴</a>
+                            <a href="product.html" class="v">${p.variants.volume} ${p.variants.unit}</a>
+                            <a href="product.html" class="price">${p.variants.price} ₴</a>
                             <!--<div>відгуки</div>-->
                         </div>
                     </div>
