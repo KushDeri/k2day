@@ -2,17 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let allProducts = []; // Сохраняем все товары для фильтрации
     let globalData = {};
 
-    //fetch("https://kushderi.github.io/k2day/json/katalog_all.json") // Загружаем JSON
-    //    .then(response => response.json()) // Преобразуем в объект
-    //    .then(data => {
-    //        globalData = data;
-    //        allProducts = data.products;
-    //        displayProducts(allProducts, globalData); // ВЫЗЫВАЕМ ФУНКЦИЮ ЗДЕСЬ   
-    //        populateFilters(allProducts, globalData); // ДЕЛАЕТ ФИЛЬТР
-    //    }) 
-    //    .catch(error => console.error("Ошибка загрузки JSON:", error));
-        //alert("Не удалось загрузить каталог. Проверь путь к файлу и наличие в GitHub.");
-
     Promise.all([
         fetch('../k2day/json/meta.json').then(r => r.json()),
         fetch('../k2day/json/brands.json').then(r => r.json()),
