@@ -43,20 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Создаем словари (id → имя) для быстрого доступа
-        //let submenuMap = Object.fromEntries(globalData.submenu.map(a => [a.id, a.name]));
+        let submenuMap = Object.fromEntries(globalData.attributes.submenu.map(a => [a.id, a.name]));
         let brandMap = Object.fromEntries(globalData.brands.map(b => [b.id, b.name]));
         let categoryMap = Object.fromEntries(globalData.categories.map(c => [c.id, c.name]));
-        let typeSkineMap = Object.fromEntries(globalData.typeSkine.map(t => [t.id, t.name]));
-        //let statusMap = Object.fromEntries(globalData.status.map(s => [s.id, { name: s.name, image: s.image }]));
-        let starMap = Object.fromEntries(globalData.star.map(f => [f.id, f.name]));
-        //let stockMap = Object.fromEntries(globalData.stock.map(k => [k.id, k.name]));
+        let typeSkineMap = Object.fromEntries(globalData.attributes.typeSkine.map(t => [t.id, t.name]));
+        //let statusMap = Object.fromEntries(globalData.attributes.status.map(s => [s.id, { name: s.name, image: s.image }]));
+        let starMap = Object.fromEntries(globalData.attributes.star.map(f => [f.id, f.name]));
+        //let stockMap = Object.fromEntries(globalData.attributes.stock.map(k => [k.id, k.name]));
 
 
 
         //HTML код отображения продуктов ВСІХ
         productsArray.forEach(p => {
 
-            //const submenuName = submenuMap[p.submenuId] || "Невідомо";
+            const submenuName = submenuMap[p.submenuId] || "Невідомо";
             const brandName = brandMap[p.brandId] || "Невідомо";
             const categoryName = categoryMap[p.categoryId] || "Невідомо";
             const typeSkineName = typeSkineMap[p.typeSkineId] || "Невідомо";
